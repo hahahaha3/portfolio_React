@@ -1,0 +1,88 @@
+.community {
+    >figure {
+        .txtFirst {
+            width: 360px;
+        }
+        .txtSecond {
+            width: 280px;
+        }
+    }
+    .inner {
+        >section {
+            .input {
+                width: 100%;
+                .inputBox {
+                    display: flex;
+                    .inputTxt {
+                        width: 380px;
+                        h1 {
+                            width: 160px;
+                            font: bold 40px/1 'arial';
+                            border-bottom: 5px solid lightblue;
+                            margin-bottom: 40px;
+                        }
+                        input {
+                            width: 80%;
+                            height: 30px;
+                            margin: 0 0 10px 20px;
+                            padding-left: 5px;
+                            border: none;
+                            border-bottom: 2px solid #333;
+                        }
+                    }
+                    textarea {
+                        width: 100%;
+                        height: 150px;
+                        padding: 10px;
+                        margin-left: 20px;
+                        border: 1px solid #999;
+                    }
+                }
+                button {
+                    bottom: 0;
+                    width: 100px;
+                    height: 30px;
+                    margin: 20px 0 0 500px;
+                    border: none;
+                    background: #eee;
+                    &:nth-of-type(2n) {
+                        margin-left: 20px;
+                    }
+                }
+            }
+            .showList {
+                width: 100%;
+                padding: 50px;
+                article {
+                    width: 100%;
+                    padding: 30px;
+                    border: 1px solid #bbb;
+                    margin-bottom: 20px;
+                    .post {
+                        >h2 {
+                            font: bold 20px/1 'arial';
+                            color: #333;
+                        }
+                        >p {
+                            height: 50px;
+                            margin: 10px;
+                            padding: 10px;
+                            font: 13px/1.3 'arial';
+                            color: #666;
+                            border: 1px solid #999;
+                        }
+                    }
+                    .btns {
+                        text-align: center;
+                        button {
+                            width: 100px;
+                            height: 30px;
+                            border: none;
+                            margin: 20px 20px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

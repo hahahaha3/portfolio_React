@@ -1,0 +1,68 @@
+.gallery {
+    >#sub_main {
+        .txtFirst {
+            width: 250px;
+        }
+        .txtSecond {
+            width: 280px;
+        }
+    }
+    .inner {
+        >section {
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            article {
+                width: 20%;
+                height: 300px;
+                float: left;
+                padding: 10px;
+                >.inner {
+                    width: 100%;
+                    height: 100%;
+                    background: white;
+                    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+                    .pic {
+                        width: 100%;
+                        height: 180px;
+                        margin-bottom: 20px;
+                        cursor: pointer;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    h2 {
+                        font: normal 14px/1 'arial';
+                        color: #777;
+                    }
+                }
+            }
+        }
+    }
+}
+.popup {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5vw;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    span {
+        font: bold 14px/1 'arial';
+        color: #fff;
+        position: absolute;
+        top: 4vh;
+        right: 5vw;
+        cursor: pointer;
+    }
+}

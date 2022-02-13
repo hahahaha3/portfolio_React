@@ -1,0 +1,102 @@
+.join {
+    #sub_main {
+        .txtFirst {
+            width: 360px;
+        }
+        .txtSecond {
+            width: 280px;
+        }
+    }
+    .inner {
+        section {
+            height: 700px;
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid #777;
+            padding: 20px;
+            img {
+                width: 400px;
+                height: 600px;
+            }
+            .success {
+                width: 100%;
+                padding: 20px;
+                background: lightblue;
+                font: bold 16px/1 '맑은 고딕';
+                color: cornflowerblue;
+                margin-bottom: 50px;
+            }
+            h1 {
+                width: 30px;
+                font: bold 20px/1 'arial';
+                margin: 10px;
+                border-bottom: 5px solid lightblue;
+            }
+            table {
+                width: 580px;
+                th, td {
+                    padding: 5px 10px;
+                }
+                th {
+                    width: 10%;
+                    text-align: left;
+                    font: normal 10px/1 'arial';
+                    color: #555;
+                    &.btnSet {
+                        input[type=reset], input[type=submit] {
+                            width: 100px; 
+                            height: 30px;
+                            border: 1px solid #555;
+                            margin-left: 130px;
+                            cursor: pointer;
+                            transition: 0.5s;
+                            font: 10px/1 'arial';
+                            background: white;
+                            color: #555;
+                            &:hover {
+                                background: #555;
+                                color: #fff;
+                            }
+                            &:nth-of-type(2n) {
+                                margin-left: 10px;
+                            }
+                        } 
+                    }
+                }
+                td {
+                    input[type=text], input[type=password], select {
+                        width: 60%;
+                        margin-left: 10px;
+                        padding: 10px 10px;
+                        border: none;
+                        border-bottom: 3px solid #aaa;
+                    }
+                    textarea {
+                        width: 60%;
+                        height: 150px;
+                        padding: 7px 20px;
+                        border: 1px solid #aaa;
+                        resize: none;
+                    }
+                    label {
+                        font: 10px/1 'arial';
+                        color: #777;
+                        margin-left: 10px;
+                    }
+                    input[type=radio], input[type=checkbox] {
+                        width: 13px;
+                        margin: 0 20px 0 10px;
+                    }
+                    .err {
+                        font: 11px/1 '맑은 고딕';
+                        color: red;
+                        display: block;
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

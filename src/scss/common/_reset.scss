@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+}
+label, input {
+    vertical-align: middle;
+    width: 100%;
+    height: 30px;
+    font: 10px/1 'arial';
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    font: 12px/1 'arial';
+}
+.h {
+    position: absolute;
+    top: -99999px;
+    opacity: 0;
+}
+
+fieldset {
+    border: none;
+}
+
+button {
+    border: none;
+    background: none;
+}

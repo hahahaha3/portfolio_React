@@ -1,0 +1,37 @@
+.youtube {
+    #sub_main {
+        .txtFirst {
+            width: 280px;
+        }
+    }
+    .inner {
+        section {
+            article {
+                display: flex;
+                padding: 10px 0;
+                margin-bottom: 30px;
+                border-top: 2px solid #333;
+                border-bottom: 2px solid #333;
+                .pic {
+                    img {
+                        width: 380px;
+                        height: 100%;
+                        cursor: pointer;
+                    }
+                }
+                .txt {
+                    padding: 60px 50px;
+                    h2 {
+                        font: bold 18px/1 'arial';
+                        color: #222;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font: 13px/1 'arial';
+                        color: #777;
+                    }
+                }
+            }
+        }
+    }
+}

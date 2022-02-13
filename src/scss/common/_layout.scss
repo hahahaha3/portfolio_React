@@ -1,0 +1,57 @@
+.content {
+    >figure {
+        width: 1180px;
+        height: 300px;
+        padding: 120px 100px;
+        margin: 0 auto;
+        transition: 0.5s;
+        border: 1px solid red;
+            .txtFirst {
+                width: 400px;
+                font: bold 50px/1.2 'arial';
+                box-shadow: inset 0 -15px 0 lightblue;
+                line-height: 30px;
+            }
+            .txtSecond {
+                width: 210px;
+                font: bold 40px/1.2 'arial';
+                box-shadow: inset 0 -15px 0 lightpink;
+                line-height: 30px;
+                margin: 20px 0;
+            }
+            p {
+                font: 13px/1 'arial';
+                color: #666;
+            }
+        
+    }
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        padding: 50px 0;
+        transform: translateY(100px);
+        transition: 1s;
+        opacity: 0;
+        >section {
+            min-height: 400px;
+        }
+    }
+    &.on {
+        >.inner {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .content {
+        >figure {
+            height: 300px;
+        }
+        >.inner {
+            width: 100%;
+            padding: 50px 3vw;
+        }
+    }
+}

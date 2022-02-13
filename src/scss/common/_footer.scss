@@ -1,0 +1,48 @@
+footer {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding: 50px 0;
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            h1 {
+                font: 25px/1 'arial';
+                color: #444;
+            }
+            p {
+                padding-top: 100px;
+                font: 10px/1 'arial';
+                margin: 10px 0;
+                color: #444;
+            }
+        }
+        .sitemap {
+            h4 {
+                font: bold 18px/1 'arial';
+                color: #222;
+            }
+            p {
+                font: 10px/1 'arial';
+                color: #777;
+                margin: 10px;
+            }
+            .icons {
+                font-size: 18px;
+                color: #333;
+                margin: 20px 10px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    footer {
+        .inner {
+            width: 100%;
+            padding: 0 3vw;
+        }
+    }
+}
