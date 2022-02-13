@@ -9,8 +9,8 @@ export default function Header(props) {
             <div className="inner">
                 <h1><NavLink exact to='/'>LOGO</NavLink></h1>
                 <ul id="util">
-                    <li><NavLink activeStyle={active} to='/join'>CONTACT</NavLink></li>
-                    <li><NavLink activeStyle={active} to='/join'>LOGIN</NavLink></li>
+                    <li><NavLink activeStyle={active} to='/index'>CONTACT</NavLink></li>
+                    <li><NavLink activeStyle={active} to='/index'>LOGIN</NavLink></li>
                     <li><NavLink activeStyle={active} to='/join'>JOIN</NavLink></li>
                 </ul>
 
