@@ -7,9 +7,11 @@ export default function Youtube() {
     const [isPop, setIsPop] = useState(false);
     const [index, setIndex] = useState(0);
     const api_key = 'AIzaSyCeRTGZL0cgymOacGQ1PqlWiDZlIFRUpOc';
-    const play_List = 'PLGOVj4gmzJyBMQSKPpBoycEvgXVFPMRZV';
+    const play_List = 'PLx62HH_9oB7gR6dIX1BG5OsxzVFJmfer9';
     const num = 10;
     const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${api_key}&playlistId=${play_List}&maxResults=${num}`;
+    const path = process.env.PUBLIC_URL;
+    
     
     useEffect(() => {
         main.current.classList.add('on');
@@ -30,7 +32,18 @@ export default function Youtube() {
                     <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
                 </figure>
                 <div className="inner">
-                    <section>
+                    <section className="top_Youtube">
+                        <div className="left_Youtube">
+                            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo veritatis vel libero explicabo doloribus nostrum ex? Excepturi, libero, aut incidunt vitae voluptate sapiente recusandae iste amet et nam nulla blanditiis mollitia pariatur numquam eligendi animi debitis obcaecati aliquid inventore quam dolorum. Nesciunt facere nihil repellendus earum odio expedita, deserunt aperiam.</p>
+                            <img src={`${path}/img/sunset.jpg`} />
+                        </div>
+                        <div className="right_Youtube">
+                            <iframe width="600" height="315" src="https://www.youtube.com/embed/jEnd8JIMii4" title="YouTube video player" frameBorder="0"  allowFullScreen></iframe>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odit molestiae repellendus natus impedit voluptatum, mollitia earum nulla laboriosam cupiditate sit reiciendis beatae placeat ab illo maiores quaerat nemo sed quam similique qui, inventore dolores officiis voluptatem! Dolorum magnam sint delectus eaque est culpa? Est iste error quos ea suscipit accusamus voluptatum, tempore autem quidem possimus fuga id molestiae mollitia deserunt impedit cumque illum iusto numquam. Unde ad harum perferendis porro perspiciatis at est quam distinctio placeat itaque odit nihil, alias repudiandae? Fuga commodi minima doloribus quis nesciunt! Facere iusto quae recusandae asperiores a inventore est dolor atque veniam vero?<br /> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa dolorum sunt minima numquam est sit, harum magnam nulla excepturi, totam voluptates quasi delectus aperiam odit alias soluta similique mollitia cupiditate iusto odio consequuntur quos architecto. Eveniet inventore accusamus fugiat fuga error, unde quae voluptate aspernatur sapiente libero, amet minima.</p>
+                        </div>
+                    </section>
+                    <section className="main">
                         {items.map((item, idx) => {
                             let tit = item.snippet.title;
                             let tit_len = tit.length;
