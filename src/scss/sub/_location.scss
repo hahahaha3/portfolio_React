@@ -38,7 +38,7 @@
                 display: flex;
                 .contact {
                     width: 380px;
-                    background: #000;
+                    background: #202c42;
                     padding: 20px;
                     h1 {
                         font: bold 25px/1 'arial';
@@ -50,13 +50,13 @@
                         font: 13px/1 'arial';
                     }
                     input {
-                        background: #000;
+                        background: #202c42;
                         border: none;
                         border-bottom: 2px solid #888;
                         margin-bottom: 20px;
                     }
                     textarea {
-                        background: #000;
+                        background: #202c42;
                         border: none;
                         border-bottom: 2px solid #888;
                         height: 100px;
@@ -74,14 +74,14 @@
                 #map {
                     width: 100%;
                     height: 450px;
-                    background: #000;
+                    background: #202c42;
                 }
             }
             button {
                 width: 150px;
                 height: 30px;
                 &:hover {
-                    border-bottom: 3px solid lightblue;
+                    border-bottom: 3px solid #202c42;
                 }
             }
 

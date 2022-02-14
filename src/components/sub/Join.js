@@ -89,13 +89,13 @@ export default function Join() {
         if( val.email.length < 8 || !/@/.test(val.email)){
             errs.email = '이메일 주소는 8글자 이상 @를 포함하여 입력하세요';
         }
-        if ( !val.gender ) {
+        if ( val.gender !== ''  ) {
             errs.gender = '성별을 선택하세요';
         }
-        if ( !val.interests ) {
+        if ( val.interests !== ''  ) {
             errs.interests = '관심사를 하나이상 선택하세요';
         }
-        if( !val.city ) {
+        if( val.city !== ''  ) {
             errs.city = '사는곳을 선택해주세요';
         }
         if( val.comment.length < 10 ) {
@@ -130,9 +130,9 @@ export default function Join() {
                 <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
             </figure>
             <div className="inner">
-                <section>
-                <img src={`${path}/img/join.jpeg`} className="join_img"/>
-                    {success ? <div className="success">회원가입을 축하합니다</div> : null}
+                <section className="joinForm">
+                    <img src={`${path}/img/join.jpg`} className="join_img"/>
+                    {success ? alert('회원가입을 축하합니다!') : null}
                     {/* submit 이벤트 발생시 함수호출 */}
                     <form onSubmit={handleSubmit}>
                         <fieldset>
@@ -287,6 +287,7 @@ export default function Join() {
                                             <textarea 
                                                 name="comment" 
                                                 id="comment" 
+                                                placeholder="남기는 말을 입력해주세요."
                                                 value={val.comment}
                                                 onChange={handleChange}
                                                 cols="30" 
@@ -307,7 +308,27 @@ export default function Join() {
                         </fieldset>
                     </form>
                 </section>
+                <section className="whyMem">
+                    <h1>Why membership?</h1>
+                    <p className="whyMemP">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate neque recusandae mollitia praesentium sequi maiores repellat quia vitae rerum cupiditate!</p>
+                    <div className="whyBox">
+                        <img src={`${path}/img/join1.png`} className="join_img"/>
+                        <h4>Predictable revenue</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas sapiente, excepturi amet quia natus similique incidunt unde facilis dignissimos debitis.</p>
+                    </div>
+                    <div className="whyBox">
+                        <img src={`${path}/img/join2.png`} className="join_img"/>
+                        <h4>Predictable revenue</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas sapiente, excepturi amet quia natus similique incidunt unde facilis dignissimos debitis.</p>
+                    </div>
+                    <div className="whyBox">
+                        <img src={`${path}/img/join3.png`} className="join_img"/>
+                        <h4>Predictable revenue</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas sapiente, excepturi amet quia natus similique incidunt unde facilis dignissimos debitis.</p>
+                    </div>
+                </section>
             </div>
+            
         </main>
     )
 }

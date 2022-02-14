@@ -8,53 +8,86 @@
         }
     }
     .inner {
-        section {
-            height: 700px;
-            display: flex;
-            justify-content: space-evenly;
-            border: 1px solid #777;
-            padding: 20px;
-            img {
-                width: 400px;
-                height: 600px;
-            }
-            .success {
-                width: 100%;
-                padding: 20px;
-                background: lightblue;
-                font: bold 16px/1 '맑은 고딕';
-                color: cornflowerblue;
-                margin-bottom: 50px;
+        .whyMem {
+            text-align: center;
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
             }
             h1 {
-                width: 30px;
+                font: bold 25px/1 'arial';
+                color: #333;
+                margin-top: 50px;
+            }
+            .whyMemP {
+                font: 10px/1.5 'arial';
+                color: #888;
+                margin: 20px 50%;
+                transform: translateX(-50%);
+                width: 500px;
+            }
+            .whyBox {
+                width: 380px;
+                float: left;
+                margin-right: 20px;
+                &:nth-of-type(3) {
+                    margin-right: 0;
+                }
+                img {
+                    width: 300px;
+                }
+                h4 {
+                    font: bold 15px/1 'arial';
+                    color: #333;
+                    margin: 20px 0;
+                }
+                p {
+                    font: 10px/1.4 'arial';
+                    color: #888;
+                    margin: 50px 0;
+                }
+            }
+        }
+        .joinForm {
+            background: #202c42;
+            height: 800px;
+            display: flex;
+            justify-content: flex-start;
+            img {
+                width: 50%;
+                height: 100%;
+                margin-right: 50px;
+            }
+            h1 {
+                width: 35px;
                 font: bold 20px/1 'arial';
-                margin: 10px;
-                border-bottom: 5px solid lightblue;
+                margin: 30px 0;
+                color: #fff;
+                border-bottom: 5px solid #c2b096;
             }
             table {
-                width: 500px;
                 th, td {
                     padding: 5px 10px;
                 }
                 th {
-                    width: 20%;
+                    width: 25%;
                     text-align: left;
                     font: normal 10px/1 'arial';
-                    color: #555;
+                    color: #fff;
                     &.btnSet {
                         input[type=reset], input[type=submit] {
-                            width: 100px; 
+                            width: 150px; 
                             height: 30px;
-                            border: 1px solid #555;
-                            margin-left: 200px;
+                            border: none;
+                            margin: 15px 0 0 130px;
                             cursor: pointer;
                             transition: 0.5s;
                             font: 10px/1 'arial';
                             background: white;
                             color: #555;
                             &:hover {
-                                background: #555;
+                                background: #c2b096;
                                 color: #fff;
                             }
                             &:nth-of-type(2n) {
@@ -65,23 +98,22 @@
                 }
                 td {
                     input[type=text], input[type=password], select {
-                        width: 100%;
+                        width: 25vw;
                         margin-left: 10px;
                         padding: 10px 10px;
                         border: none;
-                        border-bottom: 3px solid #aaa;
                     }
                     textarea {
-                        width: 100%;
+                        width: 25vw;
                         height: 150px;
-                        padding: 7px 20px;
+                        padding: 10px;
                         margin-left: 10px;
-                        border: 1px solid #aaa;
+                        border: none;
                         resize: none;
                     }
                     label {
                         font: 10px/1 'arial';
-                        color: #777;
+                        color: #fff;
                         margin-left: 10px;
                     }
                     input[type=radio], input[type=checkbox] {
@@ -93,6 +125,7 @@
                         color: red;
                         display: block;
                         margin: 5px 0;
+                        padding-left: 10px;
                     }
                 }
             }
