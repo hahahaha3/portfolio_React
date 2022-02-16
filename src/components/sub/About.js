@@ -25,12 +25,25 @@ export default function About() {
                 <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
             </figure>
             <div className="inner">
-                <section className="about">
+                {/* <section className="about">
                     <h1>About us.</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus deserunt quod quas dolore ab reprehenderit iure corrupti! Itaque atque sed repellendus nisi porro quia laborum maiores ad recusandae deserunt enim nesciunt tempora unde mollitia, velit doloribus molestiae explicabo voluptatum quae. Qui iusto accusamus ipsum esse facere id vero enim? Dolorem voluptates quibusdam architecto vero aspernatur odio quam placeat quod molestias sed aperiam reprehenderit alias quae iure itaque qui non nobis modi quis, autem ipsa fuga ad cum ut. Sit quia eius quis quibusdam voluptates, dolorum adipisci! Magnam, quidem voluptates distinctio sequi at error, ipsam a qui consequuntur quos pariatur architecto!</p>
                     <div className="aboutTxt">
                         <img src={`${path}/img/aboutSub.jpeg`} />
                         <h3><span>“</span> Our work does make<br /> &nbsp; sense only if it is a faithful <br /> &nbsp; &nbsp;withness of his time.<br /><span className="omgSpan">”</span></h3>
+                    </div>
+                </section> */}
+                <section className="about_sub">
+                    <h2>About us.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, modi! Maxime similique maiores, vel sunt illum, odio ipsa quos rerum aut id architecto dignissimos. Ipsam repellat.</p>
+                    <div className="aboutPic">
+                        <img src={`${path}/img/aboutPic.jpg`} />
+                        <div className="aboutPicTxt">
+                            <span>Inspired by the local kindness and the</span>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur deleniti, veritatis perferendis labore accusamus animi.</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores numquam totam dignissimos delectus, quae officia laudantium ipsam atque consequatur quibusdam optio commodi iure earum qui cum. Repellendus, eius blanditiis maxime, porro nisi voluptates libero praesentium quas, consequatur unde accusantium totam.<br /><br />Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, provident repudiandae. Et veritatis architecto obcaecati magnam explicabo, provident recusandae laboriosam veniam illo tempore nostrum qui non voluptas amet labore iure quisquam quod natus impedit doloribus voluptatibus. Non saepe repudiandae quae! Repellendus, provident. Assumenda eos similique voluptatem quidem cum aut beatae?</p>
+                            <strong>Enjoy the Journey</strong>
+                        </div>
                     </div>
                 </section>
                 <section className="ceo">

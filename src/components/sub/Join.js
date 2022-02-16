@@ -328,7 +328,6 @@ export default function Join() {
                     </div>
                 </section>
             </div>
-            
         </main>
     )
 }

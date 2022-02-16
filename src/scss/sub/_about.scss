@@ -4,6 +4,7 @@
             width: 300px;
         }
     }
+    
     .inner {
         .about {
             h1 {
@@ -36,6 +37,51 @@
                 img {
                     width: 400px;
                     margin: 0px 0 50px 100px;
+                }
+            }
+        }
+        .about_sub {
+            padding: 100px;
+            background: #202c42;
+            h2 {
+                font: bold 25px/1 'arial';
+                color: #fff;
+                text-align: center;
+            }
+            >p {
+                font: 12px/1.4 'arial';
+                color: #999;
+                padding: 0 250px;
+                margin: 20px 0;
+                text-align: center;
+            }
+            .aboutPic {
+                display: flex;
+                img {
+                    width: 330px;
+                    height: 400px;
+                    margin-right: 70px;
+                }
+                .aboutPicTxt {
+                    margin-top: 20px;
+                    width: 500px;
+                    >span {
+                        font: 14px/1.5 'arial';
+                        color: #c2b096;
+                    }
+                    >h4 {
+                        font: 14px/1.5 'arial';
+                        color: #fff;
+                    }
+                    >p {
+                        font: 12px/1.7 'arial';
+                        color: #999;
+                        margin: 20px 0;
+                    }
+                    >strong {
+                        font: 13px/1 'arial';
+                        color: #fff;
+                    }
                 }
             }
         }
@@ -86,7 +132,7 @@
                 img {
                     width: 400px;
                     height: 400px;
-                    box-shadow: 80px -80px 0px -40px #202c42;
+                    box-shadow: 80px -80px 0px -40px #c2b096;
                     margin-right: 40px;
                 }
             }
