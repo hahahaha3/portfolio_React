@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header(props) {
-    const active = {color: 'lightpink'};
+    const active = {color: '#c2b096'};
     return (
         <header className={props.type}>
             <div className="inner">

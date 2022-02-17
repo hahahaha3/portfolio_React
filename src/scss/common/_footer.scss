@@ -9,7 +9,7 @@ footer {
         justify-content: space-between;
         .logo {
             h1 {
-                font: 25px/1 'arial';
+                font: bold 25px/1 'arial';
                 color: #444;
             }
             p {
@@ -28,6 +28,7 @@ footer {
                 font: 10px/1 'arial';
                 color: #777;
                 margin: 10px;
+                cursor: pointer;
             }
             .icons {
                 font-size: 18px;

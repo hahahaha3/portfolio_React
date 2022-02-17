@@ -7,130 +7,137 @@
             width: 280px;
         }
     }
-    .inner {
-        .whyMem {
-            text-align: center;
-            &::after {
-                content: '';
-                display: block;
-                clear: both;
-            }
-            h1 {
-                font: bold 25px/1 'arial';
-                color: #333;
-                margin-top: 50px;
-            }
-            .whyMemP {
-                font: 10px/1.5 'arial';
-                color: #888;
-                margin: 20px 50%;
-                transform: translateX(-50%);
-                width: 500px;
-            }
-            .whyBox {
-                width: 380px;
-                float: left;
-                margin-right: 20px;
-                &:nth-of-type(3) {
-                    margin-right: 0;
-                }
-                img {
-                    width: 300px;
-                }
-                h4 {
-                    font: bold 15px/1 'arial';
-                    color: #333;
-                    margin: 20px 0;
-                }
-                p {
-                    font: 10px/1.4 'arial';
-                    color: #888;
-                    margin: 50px 0;
-                }
-            }
-        }
-        .joinForm {
-            background: #202c42;
-            height: 800px;
-            display: flex;
-            justify-content: flex-start;
-            img {
-                width: 50%;
-                height: 100%;
-                margin-right: 50px;
-            }
-            h1 {
-                width: 35px;
-                font: bold 20px/1 'arial';
-                margin: 30px 0;
-                color: #fff;
-                border-bottom: 5px solid #c2b096;
-            }
-            table {
-                th, td {
-                    padding: 5px 10px;
-                }
-                th {
-                    width: 25%;
-                    text-align: left;
-                    font: normal 10px/1 'arial';
-                    color: #fff;
-                    &.btnSet {
-                        input[type=reset], input[type=submit] {
-                            width: 150px; 
-                            height: 30px;
-                            border: none;
-                            margin: 15px 0 0 130px;
-                            cursor: pointer;
-                            transition: 0.5s;
-                            font: 10px/1 'arial';
-                            background: white;
-                            color: #555;
-                            &:hover {
-                                background: #c2b096;
+            .inner {
+                background: #202c42;
+                width: 100%;
+                .bg {
+                    width: 1180px;
+                    margin: 0 auto;
+                    .whyMem {
+                        text-align: center;
+                        &::after {
+                            content: '';
+                            display: block;
+                            clear: both;
+                        }
+                        h1 {
+                            font: bold 30px/1 'arial';
+                            color: #fff;
+                        }
+                        .whyMemP {
+                            font: 12px/1.5 'arial';
+                            color: #efefef;
+                            margin: 20px 50%;
+                            transform: translateX(-50%);
+                            width: 500px;
+                        }
+                        .whyBox {
+                            width: 380px;
+                            float: left;
+                            margin-right: 20px;
+                            &:nth-of-type(3) {
+                                margin-right: 0;
+                            }
+                            img {
+                                width: 250px;
+                            }
+                            h4 {
+                                font: bold 15px/1 'arial';
                                 color: #fff;
+                                margin: 20px 0;
                             }
-                            &:nth-of-type(2n) {
-                                margin-left: 10px;
+                            p {
+                                font: 10px/1.4 'arial';
+                                color: #efefef;
+                                margin: 50px 0 30px;
                             }
-                        } 
+                            &:hover {
+                                transform: scale(1.05);
+                            }
+                        }
                     }
-                }
-                td {
-                    input[type=text], input[type=password], select {
-                        width: 25vw;
-                        margin-left: 10px;
-                        padding: 10px 10px;
-                        border: none;
-                    }
-                    textarea {
-                        width: 25vw;
-                        height: 150px;
-                        padding: 10px;
-                        margin-left: 10px;
-                        border: none;
-                        resize: none;
-                    }
-                    label {
-                        font: 10px/1 'arial';
-                        color: #fff;
-                        margin-left: 10px;
-                    }
-                    input[type=radio], input[type=checkbox] {
-                        width: 13px;
-                        margin: 0 20px 0 10px;
-                    }
-                    .err {
-                        font: 11px/1 '맑은 고딕';
-                        color: red;
-                        display: block;
-                        margin: 5px 0;
-                        padding-left: 10px;
+                    .joinForm {
+                        background: #202c42;
+                        height: 650px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin-top: 20px;
+                        .join_img {
+                            height: 500px;
+                            width: 400px;
+                            margin-top: 20px;
+                        }
+                        h1 {
+                            width: 40px;
+                            font: bold 20px/1 'arial';
+                            color: #fff;
+                            border-bottom: 8px solid #c2b096;
+                            margin-bottom: 10px;
+                        }
+                        table {
+                            th, td {
+                                padding: 5px 10px;
+                            }
+                            th {
+                                width: 120px;
+                                text-align: left;
+                                font: normal 10px/1 'arial';
+                                color: #fff;
+                                &.btnSet {
+                                    input[type=reset], input[type=submit] {
+                                        width: 100px; 
+                                        height: 30px;
+                                        border: none;
+                                        margin-left: 165px;
+                                        cursor: pointer;
+                                        transition: 0.5s;
+                                        font: 10px/1 'arial';
+                                        background: white;
+                                        color: #555;
+                                        &:hover {
+                                            background: #c2b096;
+                                            color: #fff;
+                                        }
+                                        &:nth-of-type(2n) {
+                                            margin-left: 10px;
+                                        }
+                                    } 
+                                }
+                            }
+                            td {
+                                input[type=text], input[type=password], select {
+                                    width: 320px;
+                                    margin-left: 10px;
+                                    padding: 10px 10px;
+                                    border: none;
+                                }
+                                textarea {
+                                    width: 320px;
+                                    height: 150px;
+                                    padding: 10px;
+                                    margin-left: 10px;
+                                    border: none;
+                                    resize: none;
+                                }
+                                label {
+                                    font: 10px/1 'arial';
+                                    color: #fff;
+                                    margin-left: 10px;
+                                }
+                                input[type=radio], input[type=checkbox] {
+                                    width: 13px;
+                                    margin: 0 20px 0 10px;
+                                }
+                                .err {
+                                    font: 10px/1 '맑은 고딕';
+                                    color: red;
+                                    display: block;
+                                    padding-left: 10px;
+                                    transform: translateY(5px);
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
-    }
-
-
-}

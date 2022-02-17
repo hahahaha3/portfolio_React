@@ -130,6 +130,7 @@ export default function Join() {
                 <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
             </figure>
             <div className="inner">
+                <div className="bg">
                 <section className="joinForm">
                     <img src={`${path}/img/join.jpg`} className="join_img"/>
                     {success ? alert('회원가입을 축하합니다!') : null}
@@ -327,6 +328,7 @@ export default function Join() {
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas sapiente, excepturi amet quia natus similique incidunt unde facilis dignissimos debitis.</p>
                     </div>
                 </section>
+                </div>
             </div>
         </main>
     )

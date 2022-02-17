@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    background: #333;
+    background: #202c42;
     .inner {
         width: 1180px;
         height: 100px;
@@ -12,7 +12,7 @@ header {
             bottom: 20px;
             a {
                 font: bold 24px/1 'arial';
-                color: white;
+                color: #fff;
             }
         }
         #util {
@@ -26,7 +26,7 @@ header {
                     display: inline-block;
                     padding: 10px 10px;
                     font: 10px/1 'arial';
-                    color: white;
+                    color: #fff;
                     transition: 0.5s;
                 }
             }
@@ -41,7 +41,7 @@ header {
                     display: inline-block;
                     padding: 20px 30px;
                     font: 14px/1 'arial';
-                    color: white;
+                    color: #fff;
                     transition: 0.5s;
                 }
             }

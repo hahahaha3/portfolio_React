@@ -12,22 +12,22 @@ export default function Location() {
     const path = process.env.PUBLIC_URL;
     const info = [
         {
-            title: '인천공항',
+            title: 'Incheon Airport',
             latlng: new kakao.maps.LatLng(37.459272748230944, 126.45974962289725),
             imgSrc: path+'/img/map.png', 
             imageSize: new kakao.maps.Size(40, 40),
             imgPos: {offset: new kakao.maps.Point(116, 99)},
         },
         {
-            title: '김포공항',
+            title: 'Gimpo Airport',
             latlng: new kakao.maps.LatLng(37.54700467448257, 126.81579726787132),
             imgSrc: path+'/img/map.png', 
             imageSize: new kakao.maps.Size(40, 40),
             imgPos: {offset: new kakao.maps.Point(116, 99)},
         },
         {
-            title: '제주공항',
-            latlng: new kakao.maps.LatLng(33.500263917139755, 126.51049639615015),
+            title: 'Jeju Airport',
+            latlng: new kakao.maps.LatLng(37.54700467448257, 126.81579726787132),
             imgSrc: path+'/img/map.png', 
             imageSize: new kakao.maps.Size(40, 40),
             imgPos: {offset: new kakao.maps.Point(116, 99)},
@@ -41,7 +41,7 @@ export default function Location() {
         container.current.innerHTML = '';
         const options = {
             center: mapInfo[0].latlng,
-            level: 7
+            level: 6
         }
         const map = new kakao.maps.Map(container.current, options);
         setMap(map);
@@ -116,21 +116,23 @@ export default function Location() {
                                 <span>Message</span>
                                 <textarea placeholder='enter your message'></textarea>
                             </div>
+                            <input type="checkbox" name="agreeCheck" id="agreeCheck" />
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores consequatur dolores, ipsam itaque fugiat placeat?</p>
                             <button type="submit">SUBMIT</button>
                         </div>
                         <div id="map" ref={container}></div>
                     </article>
-                    <nav className="traffic">
+                    {/* <nav className="traffic">
                         <button onClick={() => {
                             map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);  
                         }}>교통정보 보기</button>
                         <button onClick={() => {
                             map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);  
                         }}>교통정보 끄기</button>
-                    </nav>
+                    </nav> */}
                     <nav className="branch">
                         {mapInfo.map((data, idx) =>{
-                            return <button key={idx} onClick={() => {setIndex(idx)}}>{data.title}</button>
+                            return <button key={idx} onClick={() => {setIndex(idx)}  }>{data.title}</button>
                         })}
                     </nav>
                 </section>
