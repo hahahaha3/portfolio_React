@@ -2,9 +2,11 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Community() {
     const main = useRef(null);
+    const email = useRef(null);
     const input = useRef(null);
     const textarea = useRef(null);
     const showBox = useRef(null);
+    const updateEmail = useRef(null);
     const updateInput = useRef(null);
     const updateTextarea = useRef(null);
 
@@ -18,21 +20,24 @@ export default function Community() {
         }
     }
     const [posts, setPosts] = useState(getLocalItems);
+    
     const createPost = () => {
+        const emailVal = email.current.value.trim();
         const inputVal = input.current.value.trim();
         const textareaVal = textarea.current.value.trim();
 
-        if ( !inputVal || inputVal === '' || !textareaVal || textareaVal==='' ) {
-            alert('제목과 본문을 모두 입력하세요');
+        if ( !inputVal || inputVal === '' || !textareaVal || textareaVal === '' || !emailVal || email === '') {
+            alert('이메일, 제목, 본문을 모두 입력하세요.');
             return;
         }
         setPosts([
             {
-                email: input.current.value,
+                email: email.current.value,
                 title: input.current.value,
                 content: textarea.current.value
             }, ...posts
         ])
+        email.current.value = '';
         input.current.value = '';
         textarea.current.value = '';
     }
@@ -43,7 +48,7 @@ export default function Community() {
 
     const enableUpdate = index => {
         setPosts(posts.map((post, idx) => {
-            if(idx === idx) post.enableUpdate =true;
+            if(idx === index) post.enableUpdate =true;
             return post;
         }))
         console.log(posts);
@@ -53,23 +58,25 @@ export default function Community() {
         setPosts(
             posts.map((post, idx) => {
                 if(idx === index) post.enableUpdate =false;
-                return post
+                return post;
             })
         )
         console.log(posts);
     }
 
     const updatePost = index => {
+        const emailVal2 = updateEmail.current.value.trim();
         const inputVal2 = updateInput.current.value.trim();
         const textareaVal2 = updateTextarea.current.value.trim();
-        if (!inputVal2 || inputVal2 === '' || !textareaVal2 || textareaVal2 === '') {
-            alert('수정할 제목과 본문을 입력하세요');
+        if ( !inputVal2 || inputVal2 === '' || !textareaVal2 || !textareaVal2 === '' || !emailVal2 || !emailVal2 === '' ) {
+            alert('수정할 이메일과 제목과 본문을 입력하세요.');
             return;
         }
         
         setPosts(
             posts.map((post, idx) => {
                 if(idx === index) {
+                    post.email = updateEmail.current.value;
                     post.title = updateInput.current.value;
                     post.content = updateTextarea.current.value;
                     post.enableUpdate = false;
@@ -85,7 +92,7 @@ export default function Community() {
 
     useEffect(() => {
         console.log('변경됨');
-        localStorage.setItem('post', JSON.stringify(posts));
+        localStorage.setItem('posts', JSON.stringify(posts));
     }, [posts]);
 
     return(
@@ -105,29 +112,28 @@ export default function Community() {
                                     type="email" 
                                     name="" 
                                     id="" 
-                                    ref={input}
-                                    placeholder="이메일을 입력하세요"
+                                    ref={email}
+                                    placeholder="이메일을 입력하세요."
                                 />
                                 <input 
                                     type="text" 
                                     name="" 
                                     id="" 
                                     ref={input}
-                                    placeholder="제목을 입력하세요"
+                                    placeholder="제목을 입력하세요."
                                 /><br />
                             </div>
                             <textarea 
-                            placeholder="본문을 입력하세요" 
-                            cols="30" 
-                            rows="10"
+                            placeholder="본문을 입력하세요." 
                             ref={textarea}
                             ></textarea> <br />
                         </div>
                         <button onClick={() => {
+                            email.current.value = '';
                             input.current.value = '';
                             textarea.current.value = '';
-                        }}>Cancel</button>
-                        <button onClick={ createPost }>Create</button>
+                        }}>CANCEL</button>
+                        <button onClick={ createPost }>CREATE</button>
                     </div>
 
                     <div className="showList" ref={showBox}>
@@ -140,23 +146,32 @@ export default function Community() {
                                         <>
                                             <div className="post">
                                                 <input 
+                                                    type="email" 
+                                                    defaultValue={post.email} 
+                                                    ref = {updateEmail}
+                                                    placeholder = "이메일을 입력하세요."
+                                                    /> <br/>
+                                                <input 
                                                     type="text" 
                                                     defaultValue={post.title} 
                                                     ref = {updateInput}
+                                                    placeholder = "제목을 입력하세요."
                                                     /> <br/>
                                                 <textarea 
                                                     defaultValue={post.content}
                                                     ref={updateTextarea}
+                                                    placeholder = "본문을 입력하세요."
                                                 ></textarea> <br/>
                                             </div>
                                             <div className="btns">
-                                                <button onClick={() => updatePost(idx)}>Update</button>
-                                                <button onClick={() => disableUpdate(idx)}>Cancel</button>
+                                                <button onClick={() => updatePost(idx)}>UPDATE</button>
+                                                <button onClick={() => disableUpdate(idx)}>CANCEL</button>
                                             </div>
                                         </>
                                         :
                                     <>
                                         <div className="post">
+                                            <span>{post.email}</span>
                                             <h2>{post.title}</h2>
                                             <p>{post.content}</p>
                                         </div>

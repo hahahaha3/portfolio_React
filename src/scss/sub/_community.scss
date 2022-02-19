@@ -48,28 +48,54 @@
                     &:nth-of-type(2n) {
                         margin-left: 20px;
                     }
+                    &:hover {
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
                 }
             }
             .showList {
                 width: 100%;
-                padding: 50px;
+                display: flex;
+                flex-wrap: wrap;
                 article {
-                    width: 100%;
+                    width: 380px;
+                    height: 330px;
                     padding: 30px;
-                    border: 1px solid #bbb;
-                    margin-bottom: 20px;
+                    border: 1px solid #e1e1e1;
+                    margin: 50px 20px 0 0;
+                    &:nth-of-type(3n) {
+                        margin-right: 0;
+                    }
                     .post {
+                        >input {
+                            margin-bottom: 10px;
+                            border: none;
+                            border-bottom: 2px solid rgb(198, 198, 198);
+                        }
+                        >textarea {
+                            margin-bottom: 30px;
+                            border: none;
+                            border-bottom: 2px solid rgb(198, 198, 198);
+                        }
+                        >span {
+                            font: 10px/1 'arial';
+                            color: #777;
+                        }
                         >h2 {
-                            font: bold 20px/1 'arial';
-                            color: #333;
+                            //width: 25px;
+                            font: bold 18px/1 'arial';
+                            color: #555;
+                            margin-top: 10px;
+                            //border-bottom: 4px solid #C2B096;
                         }
                         >p {
-                            height: 50px;
-                            margin: 10px;
+                            height: 150px;
+                            margin: 20px 10px;
                             padding: 10px;
-                            font: 13px/1.3 'arial';
-                            color: #666;
-                            border: 1px solid #999;
+                            font: 12px/1.3 'arial';
+                            color: #999;
+                            border: 1px solid #e5e5e5;
                         }
                     }
                     .btns {
@@ -78,8 +104,13 @@
                             width: 100px;
                             height: 30px;
                             border: none;
-                            border: 1px solid #999;
-                            margin: 20px 20px 0;
+                            border: 1px solid rgb(198, 198, 198);
+                            color: #666;
+                            margin: 0px 20px 30px;
+                            &:hover {
+                                font-weight: bold;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }

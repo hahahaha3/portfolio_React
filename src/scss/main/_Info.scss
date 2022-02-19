@@ -1,0 +1,30 @@
+#info {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    h1 {
+        font: 30px/1 'Lora';
+        margin-bottom: 20px;
+    }
+    strong {
+        font: 50px/1 'Lora';
+        margin-bottom: 20px;
+    }
+    h5 {
+        font: 14px/1 'Lora';
+        margin: 10px 0;
+    }
+    span {
+        display: block;
+        font: 15px/1 'Lora';
+        color: #c2b096;
+        margin-bottom: 30px;
+    }
+    p {
+        font: 10px/1 'Lora';
+        margin-bottom: 20px;
+        color: #999;
+    }
+}

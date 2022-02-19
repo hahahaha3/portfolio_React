@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faBed, faCarRear, faEnvelope, faLocationDot, faLocationPin, faMapLocation, faPhone, faUtensils } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram} from '@fortawesome/free-brands-svg-icons'
 
 export default function Location() {
@@ -135,6 +135,27 @@ export default function Location() {
                             return <button key={idx} onClick={() => {setIndex(idx)}  }>{data.title}</button>
                         })}
                     </nav>
+                </section>
+
+                <section className="box_bottom">
+                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, quae! Perspiciatis, fuga nulla. Accusamus quos voluptatem ullam ipsam reiciendis quidem.</p>
+                    <article>
+                        <FontAwesomeIcon icon={faBed} className="bottom_icons"/>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit eaque dolorem placeat veniam, labore at dignissimos maxime pariatur deserunt vero?</p>
+                    </article>
+                    <article>
+                        <FontAwesomeIcon icon={faMapLocation} className="bottom_icons"/>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit eaque dolorem placeat veniam, labore at dignissimos maxime pariatur deserunt vero?</p>
+                    </article>
+                    <article>
+                        <FontAwesomeIcon icon={faCarRear} className="bottom_icons"/>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit eaque dolorem placeat veniam, labore at dignissimos maxime pariatur deserunt vero?</p>
+                    </article>
+                    <article>
+                        <FontAwesomeIcon icon={faUtensils} className="bottom_icons"/>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit eaque dolorem placeat veniam, labore at dignissimos maxime pariatur deserunt vero?</p>
+                    </article>
                 </section>
             </div>
         </main>

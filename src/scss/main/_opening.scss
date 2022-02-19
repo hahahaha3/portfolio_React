@@ -1,0 +1,44 @@
+#opening {
+    width: 100%;
+    background: #000;
+    text-align: center;
+    padding: 100px 0;
+
+    h1 {
+        color: #fff;
+        font: 35px/1 'Lora';
+        margin-bottom: 30px;
+    }
+    p {
+        color: #b7b7b7;
+        margin-bottom: 3px;
+    }
+    h3, span {
+        color: #fff;
+        display: inline-flex;
+        font: 50px/1 'Lora';
+        margin: 50px 5px;
+    }
+    .openingInput {
+        input {
+            width: 300px;
+            padding-left: 20px;
+            margin: 0 auto;
+            border: none;
+            font: 10px/1 'Lora';
+        }
+        button {
+            color: #fff;
+            width: 100px;
+            height: 30px;
+            border: 1px solid #fff;
+            margin-bottom: 30px;
+            font: 10px/1 'Lora';
+            transform: translateY(.8px);
+            &:hover {
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+    }
+}

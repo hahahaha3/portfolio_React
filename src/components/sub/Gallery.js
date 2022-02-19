@@ -142,6 +142,7 @@ export default function Gallery() {
                     <input type="text" ref={input} onKeyUp={showSearchEnter} placeholder="검색어를 입력하세요" />
                     <button onClick={ showSearch }>SEARCH</button>
                     {/* <FontAwesomeIcon icon={faRepeat} className="icons" onClick= {showInterest} /> */}
+                    <span onClick= {showInterest}>INTEREST</span>
                 </div>
                 {loading ? <img className='loading' src={path+'/img/loading.gif'} /> : null}
                 <section ref={frame}>

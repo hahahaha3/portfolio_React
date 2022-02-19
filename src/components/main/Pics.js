@@ -15,16 +15,15 @@ export default function Pics() {
 
         await axios.get(url).then(json=>{
             dispatch(setFlickr(json.data.photos.photo));
-          })
+            })
         }
 
     useEffect(()=>{
-        // 조건을 넣어줘서 리셋되는걸 해제해줘야함!!
         if(picData.length === 0) getFlickr();
       },[])
 
     return (
-        <section id="pics">
+        <section id="pics" className="myScroll">
             <ul>
                 {picData.map((pic,idx)=>{
                     if(idx < 10) {

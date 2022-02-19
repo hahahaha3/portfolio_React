@@ -133,5 +133,42 @@
                 }
             }
         }
+        .box_bottom {
+            margin-top: 50px;
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            h2 {
+                font: normal 35px/1 'arial';
+                color: #444;
+                width: 350px;
+            }
+            p {
+                width: 500px;
+                margin: 20px 0;
+                color: #555;
+            }
+            article {
+                float: left;
+                width: 280px;
+                margin: 30px 20px 0 0;
+                text-align: center;
+                &:nth-of-type(4) {
+                    margin-right: 0;
+                }
+                .bottom_icons {
+                    font-size: 45px;
+                    color: #444;
+                }
+                p {
+                    font: 10px/1.5 'arial';
+                    color: #777;
+                    width: 280px;
+                }
+            }
+
+        }
     }
 }
