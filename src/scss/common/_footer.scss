@@ -1,7 +1,8 @@
 footer {
     width: 100%;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #999;
     padding: 50px 0;
+    background: #000;
     .inner {
         width: 1180px;
         margin: 0 auto;
@@ -10,19 +11,19 @@ footer {
         .logo {
             h1 {
                 font: bold 25px/1 'arial';
-                color: #444;
+                color: #fff;
             }
             p {
                 padding-top: 100px;
                 font: 10px/1 'arial';
                 margin: 10px 0;
-                color: #444;
+                color: #999;
             }
         }
         .sitemap {
             h4 {
                 font: bold 18px/1 'arial';
-                color: #222;
+                color: #efefef;
             }
             p {
                 font: 10px/1 'arial';
@@ -32,8 +33,8 @@ footer {
             }
             .icons {
                 font-size: 18px;
-                color: #333;
-                margin: 20px 10px 0;
+                color: #efefef;
+                margin: 40px 10px 0;
             }
         }
     }

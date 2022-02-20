@@ -40,10 +40,11 @@ export default function News({scrolled, posStart, posEnd}){
                         else {
                             style={transform: `translateX(${-position*(idx/2+1)}px)`}
                         }
-                        if(idx < 4) {
+                        if(idx < 8) {
                             return (
                                 <li key={idx} style={scrolled<=start ? style : null}> 
                                     <h2>{post.title}</h2>
+                                    <span>{post.email}</span>
                                     <p>{post.content}</p>
                                 </li>
                             )

@@ -1,15 +1,17 @@
 .location {
+    background: #000;
     #sub_main {
         .txtFirst {
-            width: 280px;
+            width: 340px;
         }
     }
     .inner {
+        padding-bottom: 0;
         .box {
             display: flex;
             justify-content: space-between;
             min-height: 200px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             .d_box {
                 width: 280px;
                 text-align: center;
@@ -18,16 +20,16 @@
                 cursor: pointer;
                 .icons {
                     font-size: 30px;
-                    color: #555;
+                    color: #efefef;
                 }
                 h2 {
-                    font: bold 18px/1 'arial';
-                    color: #555;
+                    font: bold 18px/1 'Lora';
+                    color: #efefef;
                     margin: 15px 0;
                 }
                 p {
-                    font: 10px/1.3 'arial';
-                    color: #888;
+                    font: 11px/1.3 'arial';
+                    color: #999;
                 }
             }
         }
@@ -40,29 +42,29 @@
                 display: flex;
                 .contact {
                     width: 380px;
-                    background: #202c42;
-                    padding: 20px;
+                    background: #fff;
+                    padding: 20px 40px;
                     h1 {
                         font: bold 30px/1 'arial';
-                        color: #fff;
-                        margin: 10px 0 30px;
+                        color: #000;
+                        margin: 10px 0 20px;
                     }
                     span {
-                        color: #fff;
+                        color: #000;
                         font: 13px/1 'arial';
                     }
                     input[type=text] {
-                        background: #202c42;
+                        background: #fff;
                         border: none;
-                        border-bottom: 2px solid #888;
+                        border-bottom: 2px solid #555;
                         margin-bottom: 20px;
                         font: 10px/1 'arial';
-                        color: #fff;
+                        color: #000;
                     }
                     textarea {
-                        background: #202c42;
+                        background: #fff;
                         border: none;
-                        border-bottom: 2px solid #888;
+                        border-bottom: 2px solid #555;
                         height: 100px;
                         color: #fff;
                     }
@@ -75,40 +77,30 @@
                     p {
                         margin: 15px 25px 0 ;
                         font: 10px/1.3 'arial';
-                        color: #fff;
+                        color: #555;
                         letter-spacing: 1px;
                     }
                     button {
                         margin-top: 20px;
                         width: 100%;
                         height: 30px;
-                        background: #fff;
+                        background: #000;
                         border: none;
                         font: normal 10px/1 'arial';
-                        color: #222;
+                        color: #fff;
                         cursor: pointer;
                     }
                 }
                 #map {
                     width: 800px;
                     height: 450px;
-                    background: #202c42;
                 }
             }
             button {
                 width: 150px;
                 height: 30px;
+                background: #fff;
             }
-
-            // .traffic {
-            //     display: inline-block;
-            //     margin-top: 10px;
-            //     button {
-            //         &:nth-of-type(1) {
-            //             margin-left: 294.5px;
-            //         }
-            //     }
-            // }
             .branch {
                 display: inline-block;
                 button {
@@ -117,18 +109,18 @@
                     height: 40px;
                     top: -40px;
                     right: -380px;
-                    color: #202c42;
+                    color: #c2b096;;
                     font: 10px/1 'arial';
                     color: #666;
                     transition: 1s;
-                    border: 1px solid #202c42;
+                    border: 1px solid #c2b096;
                     margin-left: -1px;
                     &:nth-of-type(3) {
                         margin-right: 0;
                         
                     }
                     &:hover {
-                        border-bottom: 10px solid #202c42;
+                        border-bottom: 10px solid #c2b096;
                     }
                 }
             }
@@ -142,13 +134,13 @@
             }
             h2 {
                 font: normal 35px/1 'arial';
-                color: #444;
+                color: #fff;
                 width: 350px;
             }
             p {
                 width: 500px;
                 margin: 20px 0;
-                color: #555;
+                color: #999;
             }
             article {
                 float: left;
@@ -160,15 +152,14 @@
                 }
                 .bottom_icons {
                     font-size: 45px;
-                    color: #444;
+                    color: #efefef;
                 }
                 p {
                     font: 10px/1.5 'arial';
-                    color: #777;
+                    color: #999;
                     width: 280px;
                 }
             }
-
         }
     }
 }

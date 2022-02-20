@@ -1,4 +1,5 @@
 .join {
+    background: #000;
     #sub_main {
         .txtFirst {
             width: 360px;
@@ -8,7 +9,7 @@
         }
     }
             .inner {
-                background: #202c42;
+                background: #000;
                 width: 100%;
                 .bg {
                     width: 1180px;
@@ -57,7 +58,7 @@
                         }
                     }
                     .joinForm {
-                        background: #202c42;
+                        background: #000;
                         height: 650px;
                         display: flex;
                         justify-content: space-evenly;

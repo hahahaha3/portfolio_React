@@ -1,14 +1,13 @@
 .about {
+    background: #000;
     >figure {
         .txtFirst {
-            width: 300px;
+            width: 350px;
         }
     }
     
     .inner {
         .about_sub {
-            padding: 100px;
-            background: #202c42;
             h2 {
                 font: bold 25px/1 'arial';
                 color: #fff;
@@ -23,6 +22,7 @@
             }
             .aboutPic {
                 display: flex;
+                justify-content: center;
                 img {
                     width: 330px;
                     height: 400px;
@@ -64,7 +64,7 @@
                 p {
                     font: 13px/1.3 'arial';
                     margin: 20px 0;
-                    color: #777;
+                    color: #999;
                 }
                 .ceoTxtNum {
                     width: 150px;
@@ -90,7 +90,7 @@
                     }
                     p {
                         font: 15px/1 'arial';
-                        color: #888;
+                        color: #999;
                     }
                 }
             }
@@ -116,12 +116,12 @@
                 }
                 h2 {
                     font: bold 20px/1 'arial';
-                    color: #444;
+                    color: #fff;
                     margin: 20px 0 10px;
                 }
                 p {
                     font: 10px/1 'arial';
-                    color: #777;
+                    color: #999;
                 }
             }
         }

@@ -14,13 +14,15 @@ export default function Header(props) {
                     <li><NavLink activeStyle={active} to='/join'>JOIN</NavLink></li>
                 </ul>
 
-                <ul id="gnb">
-                    <li><NavLink activeStyle={active} to='/about'>ABOUT</NavLink></li>
-                    <li><NavLink activeStyle={active} to='/community'>COMMUNITY</NavLink></li>
-                    <li><NavLink activeStyle={active} to='/gallery'>GALLERY</NavLink></li>
-                    <li><NavLink activeStyle={active} to='/youtube'>YOUTUBE</NavLink></li>
-                    <li><NavLink activeStyle={active} to='/location'>LOCATION</NavLink></li>
-                </ul>
+                <nav className="shift">
+                    <ul id="gnb">
+                        <li><NavLink activeStyle={active} to='/about'>ABOUT</NavLink></li>
+                        <li><NavLink activeStyle={active} to='/community'>COMMUNITY</NavLink></li>
+                        <li><NavLink activeStyle={active} to='/gallery'>GALLERY</NavLink></li>
+                        <li><NavLink activeStyle={active} to='/youtube'>YOUTUBE</NavLink></li>
+                        <li><NavLink activeStyle={active} to='/location'>LOCATION</NavLink></li>
+                    </ul>
+                </nav>
                 <FontAwesomeIcon icon={faBars} />
             </div>
         </header>

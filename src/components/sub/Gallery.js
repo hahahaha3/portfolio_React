@@ -4,8 +4,6 @@ import { useSelector } from "react-redux";
 import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { setFlickr } from "../../redux/actions";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRepeat, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export default function Gallery() {
     const main = useRef(null);
@@ -130,6 +128,7 @@ export default function Gallery() {
         </figure>
         <div className="innerWrap">
             <div className="inner">
+            {loading ? <img className='loading' src={path+'/img/loading.gif'} /> : null}
                 <div className="gallery_About">
                     <h1>Lorem, ipsum.</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus deserunt quod quas dolore ab reprehenderit iure corrupti! Itaque atque sed repellendus nisi porro quia laborum maiores ad recusandae deserunt enim nesciunt tempora unde mollitia, velit doloribus molestiae explicabo voluptatum quae. Qui iusto accusamus ipsum esse facere id vero enim? Dolorem voluptates quibusdam architecto vero aspernatur odio quam placeat quod molestias sed aperiam reprehenderit alias quae iure itaque qui non nobis modi quis, autem ipsa fuga ad cum ut. Sit quia eius quis quibusdam voluptates, dolorum adipisci! Magnam, quidem voluptates distinctio sequi at error, ipsam a qui consequuntur quos pariatur architecto!</p>
@@ -144,7 +143,6 @@ export default function Gallery() {
                     {/* <FontAwesomeIcon icon={faRepeat} className="icons" onClick= {showInterest} /> */}
                     <span onClick= {showInterest}>INTEREST</span>
                 </div>
-                {loading ? <img className='loading' src={path+'/img/loading.gif'} /> : null}
                 <section ref={frame}>
                     <Masonry
                         elementType={'div'}

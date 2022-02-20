@@ -40,6 +40,7 @@ export default function Intro() {
                         loop={true}
                         pagination={true}
                         grabCursor={true}
+                        navigation={true}
                         centeredSlides={true}
                         coverflowEffect={{
                             rotate: 40,

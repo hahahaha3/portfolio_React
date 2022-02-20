@@ -1,7 +1,8 @@
 .youtube {
+    background: #000;
     #sub_main {
         .txtFirst {
-            width: 280px;
+            width: 340px;
         }
     }
     .inner {
@@ -12,14 +13,14 @@
                 width: 580px;
                 h1 {
                     font: bold 50px/1.2 'Lora';
-                    color: #333;
-                    margin-top: 50px;
+                    color: #fff;
+                    margin-top: 20px;
                     padding-right: 80px;
                 }
                 p {
                     font: 12px/1.2 'arial';
                     padding: 50px 50px 50px 0;
-                    color: #666;
+                    color: #999;
                 }
                 img {
                     width: 580px;
@@ -29,7 +30,7 @@
                 p {
                     font: 12px/1.2 'arial';
                     padding: 50px;
-                    color: #666;
+                    color: #999;
                 }
             }
         }
@@ -38,8 +39,8 @@
                 display: flex;
                 padding: 10px 0;
                 margin-bottom: 30px;
-                border-top: 1.5px solid #999;
-                border-bottom: 1.5px solid #999;
+                border-top: 1.5px solid #555;
+                border-bottom: 1.5px solid #555;
                 .pic {
                     img {
                         width: 380px;
@@ -51,12 +52,12 @@
                     padding: 60px 50px;
                     h2 {
                         font: bold 18px/1 'arial';
-                        color: #222;
+                        color: #fff;
                         margin-bottom: 20px;
                     }
                     p {
-                        font: 13px/1 'arial';
-                        color: #777;
+                        font: 13px/1.5 'arial';
+                        color: #999;
                     }
                 }
             }

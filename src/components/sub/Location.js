@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBed, faCarRear, faEnvelope, faLocationDot, faLocationPin, faMapLocation, faPhone, faUtensils } from '@fortawesome/free-solid-svg-icons';
+import { faBed, faCarRear, faEnvelope, faLocationDot, faMapLocation, faPhone, faUtensils } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram} from '@fortawesome/free-brands-svg-icons'
 
 export default function Location() {

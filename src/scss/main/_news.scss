@@ -1,17 +1,17 @@
 #news {
     width: 100%;
     padding: 150px 0;
-    background: beige;
+    background: #000;
 
     .inner {
         width: 1180px;
         margin: 0 auto;
 
         h1 {
-            font: bold 20px/1 'arial';
-            color: #333;
+            font: bold 25px/1 'Lora';
+            color: #fff;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         ul {
             width: 100%;
@@ -22,16 +22,38 @@
             li {
                 width: 48%;
                 margin-bottom: 20px;
-                padding: 40px;
-                border: 1px solid #ccc;
+                padding: 20px;
+                background: #fff;
+                cursor: pointer;
+                &::after {
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    border: 1px solid red;
+                    content: '';
+                    transform: scaleX(0);
+                    transition: transform 5000ms ease-in-out;
+                    transform-origin: 0% 50%;
+                }
+                &:hover::after {
+                    transform: scaleX(1);
+                }
                 h2 {
-                    font: bold 15px/1 'arial';
-                    color: #555;
-                    margin-bottom: 10px;
+                    display: inline;
+                    font: bold 13px/1 'arial';
+                    color: #000;
+                    transition: ease-in-out 0.9s;                
                 }
                 p {
-                    font: 12px/1.2 'arial';
-                    color: #777;
+                    font: 10px/1.2 'arial';
+                    color: #555;
+                    padding-left: 10px;
+                    margin-top: 10px;
+                }
+                span {
+                    float: right;
+                    right: 0;
+                    color: #777;            
                 }
             }
         }

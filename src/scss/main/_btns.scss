@@ -9,13 +9,12 @@
             height: 10px;
             margin-bottom: 20px;
             background: #fff;
-            border: 1px solid red;
             cursor: pointer;
             transition: 0.5s;
     
             &.on {
                 height: 50px;
-                background: red;
+                background: #c2b096;
             }
         }
     }

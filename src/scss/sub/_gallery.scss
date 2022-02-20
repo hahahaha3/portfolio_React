@@ -1,7 +1,8 @@
 .gallery {
+  background: #000;
     >#sub_main {
         .txtFirst {
-            width: 260px;
+            width: 310px;
         }
         .txtSecond {
             width: 210px;
@@ -12,16 +13,24 @@
         >.inner {
             transition: none; width: 1180px; margin: 0px auto; min-height:  500px; padding-top: 50px;
             .loading {
-              position: absolute; top: 0px; left: 50%; width: 50%; transform: translateX(-50%);
-            }
+              width: 100px;
+              position: sticky;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              transition: 1s;
+              &.off {
+                  opacity: 0;
+              }
+          }
             .gallery_About {
               h1 {
                   font: bold 40px/1 'arial';
-                  color: #222;
+                  color: #fff;
               }
               p {
                   font: 13px/1.2 'arial';
-                  color: #777;
+                  color: #999;
                   margin: 30px 0;
                   padding: 0 100px;
               }
@@ -32,11 +41,11 @@
                   h3 {
                       width: 700px;
                       font: 35px/1 'Zen Antique Soft';
-                      color: #555;
+                      color: rgb(203, 203, 203);
                       margin: 20px 0 0 150px;
                       span {
                           font: 80px/1 'Zen Antique Soft';
-                          color: #222;
+                          color: rgb(137, 137, 137);
                       }
                       .omgSpan {
                           margin-left: 420px;
@@ -57,26 +66,26 @@
                 padding-left: 10px;
                 font: 13px/1 'arial';
                 border: none;
-                box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
               }
               >button {
                 position: relative;
                 left: -75px;
                 width: 150px;
                 height: 30px;
-                background: #202C42;
-                opacity: .7;
+                background: #C2B096;
+                opacity: .9;
                 color: #fff;
-                font: 11px/30px 'arial';
+                font: bold 15px/30px 'arial';
                 cursor: pointer;
+              }
+              >span {
+                color: #fff;
               }
             }
             >section {
               transform: translateY(200px); opacity: 0;
               transition: 1s;
-
-              margin-bottom: 50px;
-        
+              padding-bottom: 50px;
               &.on {
                 transform: translateY(0px); opacity: 1;
               }
@@ -84,17 +93,16 @@
               &::after {
                 content: ''; display: block; clear: both;
               }
-        
               article {
                 width: 20%; float: left;
                 >.inner {
-                  width: 100%; height: 100%; background: #fff; 
+                  width: 100%; height: 100%; 
                   .pic {
                     width: 100%;
-                    padding: 3px 5px;
                     cursor: pointer;
                     filter: grayscale(1);
-                    transition: 2s;
+                    transition: 1s;
+                    padding: 3px 5px;
                     img {
                       width: 100%; 
                     }

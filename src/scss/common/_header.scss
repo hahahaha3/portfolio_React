@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    background: #202c42;
+    background: #000;
     .inner {
         width: 1180px;
         height: 100px;
@@ -11,7 +11,7 @@ header {
             left: 0;
             bottom: 20px;
             a {
-                font: bold 24px/1 'arial';
+                font: bold 24px/1 'Zen Antique Soft';
                 color: #fff;
             }
         }
@@ -25,27 +25,73 @@ header {
                 a {
                     display: inline-block;
                     padding: 10px 10px;
-                    font: 10px/1 'arial';
+                    font: 10px/1  'Zen Antique Soft';
                     color: #fff;
                     transition: 0.5s;
                 }
             }
         }
-        #gnb {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            li {
-                float: left;
+
+        nav {
+          float: right;
+            padding: 50px 0;
+            ul {
+              text-align: center;
+              li {
+                display: inline-block;
+                width: 150px;
                 a {
-                    display: inline-block;
-                    padding: 20px 30px;
-                    font: 14px/1 'arial';
-                    color: #fff;
-                    transition: 0.5s;
+                  display: block;
+                  padding: 15px;
+                  color: #fff;
+                  margin: 0 10px;
+                  transition: all 0.8s;
+                  font: 14px/1 'Zen Antique Soft';
+                  &:after, &:before {
+                    transition: all 0.5s;
+                  }
+                  &:hover {
+                    color: #000;
+                  }
                 }
+              }
             }
-        }
+          
+            &.shift ul li a {
+              position: relative;
+              z-index: 1;
+          
+              &:hover {
+                color: #fff;
+              }
+          
+              &:after {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                width: 100%;
+                height: 1px;
+                content: ".";
+                color: transparent;
+                background: #4f5b62;
+                visibility: none;
+                opacity: 0;
+                z-index: -1;
+              }
+          
+              &:hover:after {
+                opacity: 1;
+                visibility: visible;
+                height: 100%;
+              }
+            }
+          }
+
+
         .fa-bars {
             font-size: 20px;
             color: white;
@@ -102,3 +148,4 @@ header {
         }
     }
 }
+

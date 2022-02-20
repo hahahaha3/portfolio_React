@@ -3,7 +3,6 @@ import Visual from "./Visual";
 import Opening from "./Opening";
 import Info from "./Info";
 import Intro from "./Intro";
-import Concept from "./Concept";
 import Map from "./Map";
 import News from "./News";
 import Pics from "./Pics";
@@ -77,26 +76,21 @@ export default function Main() {
             posStart={pos.current[3]}
             posEnd={pos.current[4]}
         />
-        <Concept
+        <Map
             scrolled={scrolled} 
             posStart={pos.current[4]}
             posEnd={pos.current[5]}
         />
-        <Map
+        <News
             scrolled={scrolled} 
             posStart={pos.current[5]}
             posEnd={pos.current[6]}
         />
-        <News
+        <Pics 
             scrolled={scrolled} 
             posStart={pos.current[6]}
             posEnd={pos.current[7]}
         />
-        <Pics 
-            scrolled={scrolled} 
-            posStart={pos.current[7]}
-            posEnd={pos.current[8]}
-            />
         <Btns getIndex={getIndex} />
         </div>
     )
