@@ -28,7 +28,7 @@ export default function Main() {
 
     const activation = () => {
         setScrolled(window.scrollY);
-        const base = -227;
+        const base = -50;
         let scroll = window.scrollY;  
         const btns = main.current.querySelectorAll('#btns li');
         pos.current.map((pos, idx) => {

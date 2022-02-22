@@ -128,7 +128,7 @@ export default function Gallery() {
         </figure>
         <div className="innerWrap">
             <div className="inner">
-            {loading ? <img className='loading' src={path+'/img/loading.gif'} /> : null}
+           
                 <div className="gallery_About">
                     <h1>Lorem, ipsum.</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus deserunt quod quas dolore ab reprehenderit iure corrupti! Itaque atque sed repellendus nisi porro quia laborum maiores ad recusandae deserunt enim nesciunt tempora unde mollitia, velit doloribus molestiae explicabo voluptatum quae. Qui iusto accusamus ipsum esse facere id vero enim? Dolorem voluptates quibusdam architecto vero aspernatur odio quam placeat quod molestias sed aperiam reprehenderit alias quae iure itaque qui non nobis modi quis, autem ipsa fuga ad cum ut. Sit quia eius quis quibusdam voluptates, dolorum adipisci! Magnam, quidem voluptates distinctio sequi at error, ipsam a qui consequuntur quos pariatur architecto!</p>
@@ -137,6 +137,7 @@ export default function Gallery() {
                         <h3><span>“</span> Our work does make<br /> &nbsp; sense only if it is a faithful <br /> &nbsp; &nbsp;withness of his time.<br /><span className="omgSpan">”</span></h3>
                     </div>
                 </div> 
+                {loading ? <img className='loading' src={path+'/img/loading.gif'} /> : null}
                 <div className="searchBox">
                     <input type="text" ref={input} onKeyUp={showSearchEnter} placeholder="검색어를 입력하세요" />
                     <button onClick={ showSearch }>SEARCH</button>

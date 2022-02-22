@@ -84,8 +84,9 @@
                         text-align: center;
                         margin: 0 auto;
                         &:hover {
-                            background: lightblue;
-                            color: royalblue;
+                            background: #000;
+                            color: #fff;
+                            border: 1px solid #999;
                         }
                     }
                     p {
