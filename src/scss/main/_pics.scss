@@ -1,5 +1,75 @@
 #pics {
     width: 100%;
-    height: 500px;
-    background: lightpink;
+    height: 1000px;
+    background: #000;
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        h1 {
+            font: 35px/1 'Lora';
+            color: #fff;
+            padding-bottom: 40px;
+            border-bottom: 2px solid rgb(151, 151, 151);
+            text-align: center;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                position: relative;
+                width: calc(1180px / 3);
+                height: 380px;
+                border-bottom: 2px solid rgb(169, 169, 169);
+                padding: 30px 10px;
+                color: #fff;
+                cursor: pointer;
+                filter: grayscale(1);
+                transition: 0.5s;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 2px;
+                    height: 340px;
+                    background: #fff;
+                    position: absolute;
+                    top: 20px;
+                    left: 393.333px;
+                }
+                &:hover {
+                    filter: grayscale(0);
+                }
+                &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6) {
+                    border-bottom: none;
+                }
+                &:nth-of-type(3n) {
+                    &::after {
+                        display: none;
+                    }
+                }
+                > h5 {
+                    height: 80px;
+                    font: 20px/1 'Zen Antique Soft';
+                    padding: 0 10px;
+                }
+                .buddy {
+                    width: 30px; 
+                    height: 30px;
+                    border-radius: 50%;
+                    margin: 0  0 10px 10px;
+                }
+                > h6 {
+                    font: 12px/30px 'Zen Antique Soft';
+                    float: right;
+                    display: inline-block;
+                    padding-right: 20px;
+                }
+                .pic {
+                    width: 350px;
+                    height: 200px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
 }
