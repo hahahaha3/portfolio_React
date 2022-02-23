@@ -6,11 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PORTFOLIO</title>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e2ebb94727ad2916c43b8f5749839cc9"></script>
-
-
+    <style>
+      .default {
+        position: absolute;
+        top: -9999px;
+      }
+      .mask {
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        position: fixed;
+        top: 0px;
+        z-index: 100;
+        transition: opacity 2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: 18px/1 'arial';
+        color: #fff;
+      }
+      .mask .off {
+        opacity: 0;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div class="default"></div>
+    <div class="mask">LOADING...</div>
+
+    <script>
+      const imgs = [
+        'http://localhost:3000/portfolio_React/img/aboutSub.jpeg'
+      ]
+
+      const vids = [
+      'http://localhost:3000/portfolio_React/img/visual6.mp4'
+      ]
+      const lenImg = imgs.length;
+      const lenVid = vids.length;
+      const defaults = document.querySelector('.default');
+      const mask = document.querySelector('.mask');
+      let tags = '';
+      let loadedImg = false;
+      let loadedVid = false;
+
+      createDOM();
+      Promise
+      .all([loadImg(), loadVid()])
+      .then(result => {
+        const [loadedImg, loadedVid] = result;
+        if(loadedImg && loadedVid) {
+          defaults.remove();
+          mask.classList.add('off');
+          setTimeout (() => mask.remove(), 2000);
+        }
+      })
+      
+      function createDOM(){      
+        imgs.forEach(src=>{
+          tags+=`<img src=${src} />`;
+        });
+
+        vids.forEach(src=>{
+          tags+=`<video src=${src}></video>`;
+        }); 
+
+        defaults.innerHTML = tags;
+      }   
+      function loadImg(){  
+        return new Promise((res,rej)=>{
+          const imgDOM = defaults.querySelectorAll('img');
+          let countImg = 0;        
+
+          imgDOM.forEach(img => {
+            img.onload = () =>{
+              countImg++;         
+              if(countImg === lenImg){
+                loadedImg  = true; 
+                res(loadedImg);              
+              }               
+            }
+          });
+        }) 
+      }
+
+      function loadVid(){
+        return new Promise((res,rej)=>{
+          const vidDOM = defaults.querySelectorAll('video');
+          let countVid = 0;            
+
+          vidDOM.forEach(vid => {
+            vid.onloadeddata = () =>{
+              countVid++;
+              if(countVid === lenVid) {
+                loadedVid = true;     
+                res(loadedVid);
+              }
+            }
+          }); 
+        })     
+
+      }  
+
+    </script>
   </body>
 </html>

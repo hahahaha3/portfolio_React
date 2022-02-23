@@ -32,7 +32,7 @@ header {
             }
         }
 
-        nav {
+        .shift {
           float: right;
             padding: 50px 0;
             ul {
@@ -124,6 +124,29 @@ header {
     }
 }
 
+#menuMo {
+  width: 250px; 
+  height: 100vh; 
+  background: rgba(0, 0, 0, 0.95);
+  border: 1px solid rgb(192, 192, 192);
+  position: fixed; 
+  top: 0px; 
+  left: -250px; 
+  z-index: 7; 
+  transition: 0.5s; 
+  padding: 50px;
+
+  ul li a {
+    font: bold 18px/1 'Lora'; 
+    color: #fff;
+    display: inline-block; 
+    padding: 20px;
+  }
+  &.on {
+    left: 0px;
+  }
+}
+
 @media screen and (max-width: $tablet) {
     header {
         .inner {
@@ -149,3 +172,8 @@ header {
     }
 }
 
+@media screen and (max-width: $mobile) {
+  #util {
+    display: none;
+  }
+}

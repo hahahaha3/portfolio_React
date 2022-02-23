@@ -19,3 +19,9 @@
         }
     }
 }
+
+@media screen and (max-width: $tablet) {
+    #btns {
+        display: none;
+    }
+}

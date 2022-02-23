@@ -1,8 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function Header(props) {
     const active = {color: '#c2b096'};
@@ -11,8 +10,8 @@ export default function Header(props) {
     const closeNav = () => window.innerWidth > 1200 && setIsOn(false);
     useEffect(() => {
         window.addEventListener('resize', closeNav);
-        return() => window.removeEventListener('resize', closeNav);
-    }, []);
+        return () => window.removeEventListener('resize', closeNav);
+    }, [])
     return (
         <>
             <header className={props.type}>
@@ -23,16 +22,22 @@ export default function Header(props) {
                         <li><NavLink activeStyle={active} to='/index'>LOGIN</NavLink></li>
                         <li><NavLink activeStyle={active} to='/join'>JOIN</NavLink></li>
                     </ul>
-                    <nav className="shift">
+                    <div className="shift">
                         <Gnb />
-                    </nav>
-                    <FontAwesomeIcon icon={faBars} />
+                    </div>
+                    <FontAwesomeIcon icon={faBars} onClick={toggleNav} />
                 </div>
             </header>
+            
+            <nav id='menuMo' className={isOn ? 'on' : ''}>
+                <Gnb toggleNav = {toggleNav} />
+            </nav>
         </>
     )
+}
 
     function Gnb(props) {
+        const active = {color: '#c2b096'};
         return (
             <ul id="gnb">
                 <li><NavLink activeStyle={active} to='/about'>ABOUT</NavLink></li>
@@ -43,4 +48,3 @@ export default function Header(props) {
             </ul>
         )
     }
-}

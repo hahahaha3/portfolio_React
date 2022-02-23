@@ -27,7 +27,7 @@ export default function Location() {
         },
         {
             title: 'Jeju Airport',
-            latlng: new kakao.maps.LatLng(37.54700467448257, 126.81579726787132),
+            latlng: new kakao.maps.LatLng(33.50838718678488, 126.49697597643684),
             imgSrc: path+'/img/map.png', 
             imageSize: new kakao.maps.Size(40, 40),
             imgPos: {offset: new kakao.maps.Point(116, 99)},
@@ -122,14 +122,6 @@ export default function Location() {
                         </div>
                         <div id="map" ref={container}></div>
                     </article>
-                    {/* <nav className="traffic">
-                        <button onClick={() => {
-                            map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);  
-                        }}>교통정보 보기</button>
-                        <button onClick={() => {
-                            map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);  
-                        }}>교통정보 끄기</button>
-                    </nav> */}
                     <nav className="branch">
                         {mapInfo.map((data, idx) =>{
                             return <button key={idx} onClick={() => {setIndex(idx)}  }>{data.title}</button>

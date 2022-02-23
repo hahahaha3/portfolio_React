@@ -21,3 +21,18 @@
         }
     }
 }
+
+@media screen and (max-width: $tablet) {
+    #intro {
+        .inner {
+            .mySwiper {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+}

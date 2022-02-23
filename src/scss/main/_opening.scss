@@ -42,3 +42,20 @@
         }
     }
 }
+
+@media screen and (max-width: $mobile) {
+    #opening {
+        h3, span {
+            font: 40px/1 'Lora';
+            margin: 50px 1px;
+        }
+        .openingInput {
+            input {
+                width: 60%;
+            }
+            button {
+                width: 30%;
+            }
+        }
+    }
+}

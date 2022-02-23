@@ -20,7 +20,6 @@ export default function News({scrolled, posStart, posEnd}){
     const [posts] = useState(getLocalItems);
     const base = 0;
     const start = posStart + base;
-    const end = posEnd + base;
     const position = scrolled - start;
     let style = {};
 

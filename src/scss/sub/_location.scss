@@ -42,7 +42,7 @@
                 display: flex;
                 .contact {
                     width: 380px;
-                    background: #e3e3e3;
+                    background: #eaeaea;
                     padding: 20px 40px;
                     h1 {
                         font: bold 30px/1 'Lora';
@@ -54,7 +54,7 @@
                         font: 13px/1 'Lora';
                     }
                     input[type=text] {
-                        background: #e3e3e3;
+                        background: #eaeaea;
                         border: none;
                         border-bottom: 2px solid #555;
                         margin: 5px 0 20px;
@@ -63,13 +63,13 @@
                         color: #000;
                     }
                     textarea {
-                        background: #e3e3e3;
+                        background: #eaeaea;
                         border: none;
                         border-bottom: 2px solid #555;
                         margin-top: 10px;
-                        padding-left: 10px;
+                        padding: 10px;
                         height: 100px;
-                        color: #fff;
+                        color: #000;
                         font: 11px/1 'arial';
                     }
                     input[type=checkbox] {
@@ -118,15 +118,13 @@
                     height: 40px;
                     top: -40px;
                     right: -380px;
-                    color: #c2b096;
                     font: 10px/1 'arial';
                     color: #666;
                     transition: 1s;
-                    border: 1px solid #c2b096;
+                    background: #eaeaea;
                     margin-left: -1px;
                     &:nth-of-type(3) {
                         margin-right: 0;
-                        
                     }
                     &:hover {
                         border-bottom: 10px solid #c2b096;

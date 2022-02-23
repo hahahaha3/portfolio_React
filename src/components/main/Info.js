@@ -1,7 +1,17 @@
-export default function Info() {
+export default function Info({scrolled, posStart, posEnd}) {
+    const base = -1000;
+    const start = posStart + base;
+    const position = scrolled - start;
+
     return (
         <section id="info" className="myScroll">
-            <h1>Mission</h1>
+            <h1 style={
+                scrolled >= start
+                ?
+                {transform: `translateX(${position}px)`}
+                :
+                null
+            }>Mission</h1>
             <strong>“</strong>
             <h5>In the middle of the Pacific Ocean, lies a tropical island,</h5>
             <h5>land of beauty and adventure, home of the Chamorro people, land of kindess and acceptation</h5>

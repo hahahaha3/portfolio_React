@@ -27,20 +27,20 @@
             }
             .txtbox {
                 width: 210px;
+                height: 90px;
                 float: left;
-                margin: 30px 10px 30px 0;
+                margin: 30px 10px 0px 0px;
                 h4 {
                     font: 14px/1 'arial';
                     color: #fff;
                     margin-bottom: 10px;
                 }
             }
-            .mapTxt {
+            .address {
                 .mapIcon {
-                    position: relative;
                     font-size: 25px;
                     color: #999;
-                    margin-right: 15px;
+                    margin-right: 10px;
                 }
                 h3 {
                     display: inline;
@@ -57,6 +57,47 @@
         #map {
             width: 680px;
             height: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    #location {
+        padding: 0 0 0 20px;
+        height: 100%;
+        .inner {
+            .mapTxt {
+                width: 100%;
+                .txtbox {
+                    width: 300px;
+                }
+                .address {
+                    display: none;
+                }
+            }
+            #map {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    #location {
+        padding: 0 10px 0 10px;
+        .inner {
+            width: 100%;
+            .mapTxt {
+                p {
+                    width: 100%;
+                }
+                .txtbox {
+                    height: 50px;
+                }
+            }
+            #map {
+                width: 100%;
+            }
         }
     }
 }

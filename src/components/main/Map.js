@@ -54,7 +54,7 @@ export default function Map() {
                         <h4>Distance from the airport</h4>
                         <p> - By car: 15 minutes</p>
                     </div>
-                    <div className="mapTxt">
+                    <div className="address">
                         <FontAwesomeIcon icon={faMapMarkerAlt} className="mapIcon"/>
                         <h3>5/F, The Peninsula Korea Salisbury</h3>
                         <span>Road, Kowloon</span>
