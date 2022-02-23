@@ -23,14 +23,14 @@ export default function Header(props) {
                         <li><NavLink activeStyle={active} to='/join'>JOIN</NavLink></li>
                     </ul>
                     <div className="shift">
-                        <Gnb />
+                        <Gnb/>
                     </div>
                     <FontAwesomeIcon icon={faBars} onClick={toggleNav} />
                 </div>
             </header>
             
             <nav id='menuMo' className={isOn ? 'on' : ''}>
-                <Gnb toggleNav = {toggleNav} />
+                <Gnb toggleNav={toggleNav} />
             </nav>
         </>
     )
