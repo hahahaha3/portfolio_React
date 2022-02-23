@@ -44,13 +44,30 @@
   }
 }
 @media screen and (max-width: $tablet) {
-    .content {
-        >figure {
-            height: 300px;
-        }
-        >.inner {
-            width: 100%;
-            padding: 50px 3vw;
-        }
+  .content {
+    >figure {
+      width: 100%;
+      padding: 100px 30px;
+      .txtSecond {
+        width: 175px;
+        font: bold 35px/1.2 'Lora';
+      }
     }
+  }
+}
+@media screen and (max-width: $mobile) {
+  .content {
+    >figure {
+      padding: 70px 10px;
+      .txtFirst {
+        width: 100%;
+        font: bold 45px/1.2 'Lora';
+        line-height: 30px;
+      }
+      .txtSecond {
+        width: 175px;
+        font: bold 30px/1.2 'Lora';
+      }
+    }
+  }
 }

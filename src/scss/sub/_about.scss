@@ -9,7 +9,7 @@
     .inner {
         .about_sub {
             h2 {
-                font: bold 25px/1 'arial';
+                font: bold 40px/1 'arial';
                 color: #fff;
                 text-align: center;
             }
@@ -59,6 +59,7 @@
             .ceoTxt {
                 width: 580px;
                 h1 {
+                    color: #fff;
                     font: bold 40px/1 'arial';
                 }
                 p {
@@ -123,6 +124,112 @@
                 p {
                     font: 10px/1 'arial';
                     color: #999;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .about {
+        .inner {
+            margin-top: 50px;
+            width: 100%;
+            .about_sub {
+                padding: 10px;
+                >p {
+                    padding: 0 100px;
+                    margin: 20px 0 50px;
+                }
+                .aboutPic {
+                    img {
+                        width: calc(100% / 2);
+                        margin-right: 50px;
+                    }
+                    .aboutPicTxt {
+                        margin-top: 0px;
+                        width: calc(100% / 2);
+                    }
+                }
+            }
+            .ceo {
+                width: 100%;
+                .ceoTxt {
+                    width: calc(100% / 2);
+                    padding: 0 20px;
+                    .ceoTxtNum {
+                        display: none;
+                    }
+                }
+                .ceoImg {
+                    width: calc(100% / 2);
+                    padding-right: 25px;
+                    img {
+                        width: 95%;
+                        height: 100%;
+                        box-shadow: 15px -15px 0px 0px #c2b096;
+                    }
+                }
+            }
+            .member {
+                article {
+                    width: calc(100% / 3);
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .about {
+        >figure {
+            .txtFirst {
+                width: 260px;
+            }
+        }
+        .inner {
+            .about_sub {
+                >p {
+                    padding: 0 30px;
+                }
+                .aboutPic {
+                    img {
+                        margin-right: 20px;
+                    }
+                    .aboutPicTxt {
+                        p {
+                            display: none;
+                        }
+                        h4 {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+            .ceo {
+                width: 100%;
+                min-height: 200px;
+                margin-bottom: 0;
+                .ceoTxt {
+                    width: 100%;
+                    padding: 0 20px;
+                    .ceoTxtNum {
+                        display: none;
+                    }
+                }
+                .ceoImg {
+                    display: none;
+                }
+            }
+            .member {
+                article {
+                    width: 100%;
+                    img {
+                        height: 100%;
+                    }
                 }
             }
         }
