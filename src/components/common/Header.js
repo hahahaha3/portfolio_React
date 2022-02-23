@@ -16,7 +16,7 @@ export default function Header(props) {
     return (
         <>
             <header className={props.type}>
-                <div className="inner">
+                <div className="inner myScroll">
                     <h1><NavLink exact to='/'>LOGO</NavLink></h1>
                     <ul id="util">
                         <li><NavLink activeStyle={active} to='/index'>CONTACT</NavLink></li>
