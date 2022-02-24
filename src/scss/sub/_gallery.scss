@@ -219,6 +219,14 @@
 
       @media screen and (max-width: $mobile) {
         .gallery {
+          >#sub_main {
+            .txtFirst {
+                width: 235px;
+            }
+            .txtSecond {
+                width: 150px;
+            }
+        }
           .innerWrap {
               >.inner {
                   .searchBox {
