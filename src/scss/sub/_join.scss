@@ -142,4 +142,69 @@
                     }
                 }
             }
+}
+@media screen and (max-width: $tablet) {
+    .join {
+        .inner {
+            background: #000;
+            width: 100%;
+            .bg {
+                width: 100%;
+                .whyMem {
+                        width: 100%;
+                        .whyMemP {
+                            margin: 20px 50%;
+                            width: 100%;
+                        }
+                        .whyBox {
+                            width: 100%;
+                            margin-right: 0px;
+                        }
+                }
+                .joinForm {
+                    .join_img {
+                        display: none;
+                    }
+                }
+            }
         }
+    }
+}
+@media screen and (max-width: $mobile) {
+    .join {
+        #sub_main {
+            .txtFirst {
+                font: bold 40px/1 'Lora';
+                width: 300px;
+            }
+            .txtSecond {
+                width: 210px;
+            }
+        }
+        .inner {
+            .bg {
+                .joinForm {
+                    height: 700px;
+                    padding: 10px;
+                    table {
+                        th {
+                            &.btnSet {
+                                input[type=reset], input[type=submit] {
+                                    margin-left: 50px;
+                                } 
+                            }
+                        }
+                        td {
+                            input[type=text], input[type=password], select {
+                                width: 100%;
+                            }
+                            textarea {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

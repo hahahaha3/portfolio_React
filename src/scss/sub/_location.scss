@@ -33,7 +33,6 @@
                 }
             }
         }
-
         .mapbox {
             height: 500px;
             position: relative;
@@ -165,6 +164,123 @@
                     font: 10px/1.5 'arial';
                     color: #999;
                     width: 280px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .location {
+        overflow: visible;
+        .inner {
+            width: 100%;
+            height: 100%;
+            padding: 0 10px ;
+            .mapbox {
+                height: 100%;
+                article {
+                    height: 100%;
+                    .contact {
+                        width: 33.3%;
+                        padding: 10px;
+                        h1 {
+                            font: bold 20px/1 'Lora';
+                        }
+                        p {
+                            margin: 10px 0 0 20px;
+                            font: 10px/1 'arial';
+                            color: #555;
+                        }
+                    }
+                    #map {
+                        width: 66.6%;
+                    }
+                }
+                .branch {
+                    display: inline-block;
+                    width: 100%;
+                    button {
+                        position: relative;
+                        margin-top: 20px;
+                        margin-right: 10px;
+                        width: calc(95% / 3);
+                        top: 0;
+                        right: 0;
+                        margin-left: 0px;
+                        &:nth-of-type(3) {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .box_bottom {
+                width: 100%;
+                h2 {
+                    font: normal 30px/1 'arial';
+                    width: 100%;
+                }
+                p {
+                    width: 100%;
+                }
+                article {
+                    float: left;
+                    width: calc(100% /2);
+                    margin: 30px 0px;
+                    &:nth-of-type(2n) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .location {
+        #sub_main {
+            .txtFirst {
+                width: 250px;
+            }
+        }
+        .inner {        
+            .box {
+                min-height: 100px;
+                .d_box {
+                    width: calc(100% /4);
+                    h2 {
+                        font: bold 10px/1 'Lora';
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
+            .mapbox {
+                article {
+                    .contact {
+                        p {
+                            display: none;
+                        }
+                        button {
+                            margin-top: 50px;
+                        }
+                    }
+                }
+                .branch {
+                    button {
+                        width: calc(90% / 3);
+                    }
+                }
+            }
+            .box_bottom {
+                width: 100%;
+                min-height: 200px;
+                p {
+                    display: none;
+                }
+                article {
+                    margin: 30px 0px;
                 }
             }
         }
