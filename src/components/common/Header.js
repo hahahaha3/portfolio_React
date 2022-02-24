@@ -28,7 +28,6 @@ export default function Header(props) {
                     <FontAwesomeIcon icon={faBars} onClick={toggleNav} />
                 </div>
             </header>
-            
             <nav id='menuMo' className={isOn ? 'on' : ''}>
                 <Gnb toggleNav={toggleNav} />
             </nav>

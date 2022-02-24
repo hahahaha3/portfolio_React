@@ -139,7 +139,7 @@
             transform: translateY(0px); opacity: 1;
           }
         }
-      }
+}
       
       .popup {
         width: 100%; height: 100%; background: rgba(0,0,0,.9); position: fixed; top: 0px; left: 0px; padding: 5vw; z-index: 6;
@@ -154,17 +154,44 @@
       }
       
       @media screen and (max-width: $tablet){
-        .content {
-          >figure {
-            height: 200px;
-          }
-      
-          .innerWrap {
-            >.inner {
-              width: 100%; padding: 0px 3vw; padding-top: 80px
-            }
-          }
-          
+        .gallery {
+            .innerWrap {
+                >.inner {
+                  width: 100%; padding: 0px 3vw; padding-top: 80px;
+                    .gallery_About {
+                      h1 {
+                          font: bold 40px/1 'Lora';
+                      }
+                      p {
+                          font: 13px/1.2 'Lora';
+                          padding: 0 30px;
+                      }
+                      .aboutTxt {
+                          h3 {
+                            display: none;
+                          }
+                          img {
+                              width: 100%;
+                              margin: 0px 0px 50px;
+                          }
+                      }
+                    }
+                    .searchBox {
+                      input {
+                        width: 60%;
+                      }
+                      >button {
+                        left: -60px;
+                        width: 120px;
+                        font: bold 13px/30px 'arial';
+                      }
+                      >span {
+                        width: 120px;
+                        font: bold 13px/30px 'arial';
+                      }
+                    }
+                  } 
+                } 
         }
       }
       
@@ -188,4 +215,25 @@
         .gallery {
           .item {width: 100%!important;}
         }
+      }
+
+      @media screen and (max-width: $mobile) {
+        .gallery {
+          .innerWrap {
+              >.inner {
+                  .searchBox {
+                    input {
+                      width: 65%;
+                    }
+                    >button {
+                      left: -50px;
+                      width: 100px;
+                    }
+                    >span {
+                      display: none;
+                    }
+                  }
+                } 
+              } 
+      }
       }
