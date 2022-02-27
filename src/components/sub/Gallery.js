@@ -64,7 +64,7 @@ export default function Gallery() {
             frame.current.classList.remove('on');
             getFlickr({
                 type: 'interest',
-                count: 30
+                count: 50
             });
         }
     }
@@ -84,7 +84,7 @@ export default function Gallery() {
             frame.current.classList.remove('on');
             getFlickr({
                 type: 'search',
-                count: 30,
+                count: 50,
                 tags: result
             });
         }
@@ -104,7 +104,7 @@ export default function Gallery() {
             frame.current.classList.remove('on');
             getFlickr({
                 type: 'search',
-                count: 30,
+                count: 50,
                 tags: result
             });
         }
@@ -114,7 +114,7 @@ export default function Gallery() {
         main.current.classList.add('on');
         getFlickr({
             type: 'interest',
-            count: 30
+            count: 50
         });
     }, []);
 
