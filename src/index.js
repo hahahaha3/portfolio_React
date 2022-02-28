@@ -5,13 +5,15 @@ import {HashRouter} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store, { persistor } from './redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
+import AuthService from './service/auth_service';
 
+const authService = new AuthService();
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <App />
+          <App authService={authService} />
         </PersistGate>      
       </Provider>
     </HashRouter>

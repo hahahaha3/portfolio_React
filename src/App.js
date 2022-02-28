@@ -7,10 +7,11 @@ import Gallery from "./components/sub/Gallery";
 import Join from "./components/sub/Join";
 import Location from "./components/sub/Location";
 import Youtube from "./components/sub/Youtube";
+import Login from './components/sub/Login';
 import './scss/style.scss';
 import {Route, Switch} from 'react-router-dom'
 
-function App() {
+function App({ authService }) {
   return (
     <div className="App">
       <Switch>
@@ -23,6 +24,7 @@ function App() {
       <Route path='/youtube' component={Youtube}></Route>
       <Route path='/location' component={Location}></Route>
       <Route path='/join' component={Join}></Route>
+      <Route path='/login' component={Login} authService={authService}></Route>
       <Footer />
     </div>
   );

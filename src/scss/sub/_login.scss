@@ -1,0 +1,53 @@
+.login {
+  background: #000;
+  >figure {
+      .txtFirst {
+          width: 350px;
+      }
+  }
+    .loginBox {
+      .inner {
+        width: 1180px;
+        height: 500px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .loginBox {
+          margin: 0 auto;
+          padding: 100px;
+          width: 500px;
+          height: 350px;
+          border: 1px solid #999;
+          h1 {
+            color: #fff;
+            font: bold 40px/1 'Lora';
+            margin-bottom: 20px;
+            &::after {
+              content: '';
+              display: block;
+              width: 140px;
+              height: 10px;
+              background: #c2b096;
+              transform: translate(78px, -3px);
+            }
+          }
+          .list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0.5rem;
+            .item {
+              button {
+                color: #fff;
+                margin-bottom: 20px;
+                font: bold 15px/1 'Lora';
+              }
+            }
+          }
+        }
+      }
+    }
+  }
