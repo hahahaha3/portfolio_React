@@ -41,9 +41,15 @@
             padding: 0.5rem;
             .item {
               button {
+                width: 100px;
+                height: 50px;
                 color: #fff;
                 margin-bottom: 20px;
                 font: bold 15px/1 'Lora';
+                cursor: pointer;
+                &:hover {
+                  border: 3px solid #c2b096;
+                }
               }
             }
           }

@@ -1,12 +1,11 @@
 import React from "react";
 
-  const Login = ({ authService }) => {
-    const onLogin = event => {
-      authService
-        .login(event.currentTarget.textContent)
-        .then(console.log);
-    };
-
+const Login = ({ authService }) => {
+  const onLogin = event => {
+    authService
+      .login(event.currentTarget.textContent)
+      .then(console.log);
+  };
     return(
         <main className="content login">
             <figure id="sub_main">
@@ -19,14 +18,18 @@ import React from "react";
                   <div className="loginBox">
                     <h1>LOGIN</h1>
                     <ul className="list">
-                      <li className="item"><button onClick={onLogin}>Google</button></li>
-                      <li className="item"><button onClick={onLogin}>Github</button></li>
+                      <li className="item">
+                        <button onClick={onLogin}>Google</button>
+                      </li>
+                      <li className="item">
+                        <button onClick={onLogin}>Github</button>
+                      </li>
                     </ul>
                   </div>
                 </div>
               </section>
         </main>
-    )
-}
+    );
+};
 
 export default Login;
