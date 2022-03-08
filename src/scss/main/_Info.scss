@@ -6,15 +6,23 @@
     padding: 100px 0;
     text-align: center;
     overflow-x: hidden;
+    .box {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        display: block;
+        width: 750px;
+        height: 400px;
+        border: 3px solid #fff;
+    }
     h1 {
         position: relative;
-        left: -900px;
         font: 35px/1 'Lora';
         margin-bottom: 20px;
-        &::after {
-            transition: transform 5000ms ease-in-out;
-            transform-origin: 0% 50%;
-        }
+        // &::after {
+        //     transition: transform 5000ms ease-in-out;
+        //     transform-origin: 0% 50%;
+        // }
     }
     strong {
         font: 50px/1 'Lora';
