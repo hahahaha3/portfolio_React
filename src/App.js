@@ -24,7 +24,8 @@ function App({ authService }) {
       <Route path='/youtube' component={Youtube}></Route>
       <Route path='/location' component={Location}></Route>
       <Route path='/join' component={Join}></Route>
-      <Login authService={authService} />
+      <Route path='/login' component={Login} ><Login authService={authService} /></Route>
+      {/* <Login authService={authService} /> */}
       <Footer />
     </div>
   );
