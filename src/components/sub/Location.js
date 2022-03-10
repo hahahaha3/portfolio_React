@@ -130,23 +130,23 @@ export default function Location() {
                 </section>
 
                 <section className="box_bottom">
-                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, quae! Perspiciatis, fuga nulla. Accusamus quos voluptatem ullam ipsam reiciendis quidem.</p>
+                    <h2>The Most Prestigious Addresses in the World</h2>
+                    <p>Fairmont Hotels understands luxury is more than opulent interiors, exquisite service and iconic addresses. True luxury is the gift of unforgettable experiences. It’s that moment when you see, hear, taste, touch or feel something as if for the very first time.</p>
                     <article>
                         <FontAwesomeIcon icon={faBed} className="bottom_icons"/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit eaque dolorem placeat veniam, labore at dignissimos maxime pariatur deserunt vero?</p>
+                        <p>With a rich tradition of hospitality dating back to the end of the 19th century, we've never allowed ourselves to simply rest on our laurels.</p>
                     </article>
                     <article>
                         <FontAwesomeIcon icon={faMapLocation} className="bottom_icons"/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit eaque dolorem placeat veniam, labore at dignissimos maxime pariatur deserunt vero?</p>
+                        <p>We’ve welcomed global leaders and been present at world-changing events. Our beach resorts have provided a haven for celebrities and our secluded mountain lodges have welcomed royalty.</p>
                     </article>
                     <article>
                         <FontAwesomeIcon icon={faCarRear} className="bottom_icons"/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit eaque dolorem placeat veniam, labore at dignissimos maxime pariatur deserunt vero?</p>
+                        <p>From our castles in the Rockies to modern wonders in exotic places, each hotel celebrates, captures and connects to each destination’s distinctive spirit so we can share it with our valued guests.</p>
                     </article>
                     <article>
                         <FontAwesomeIcon icon={faUtensils} className="bottom_icons"/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit eaque dolorem placeat veniam, labore at dignissimos maxime pariatur deserunt vero?</p>
+                        <p>Ready to indulge in major me-time? Choose to spend your days in the sun on the pristine sandy beaches of a tropical isle. Pacific, Atlantic or Caribbean, we’ve got it covered with resorts ready to pamper you.</p>
                     </article>
                 </section>
             </div>

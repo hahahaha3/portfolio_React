@@ -2,9 +2,6 @@ export default function Info({scrolled, posStart, posEnd}) {
     const base = -480;
     const start = posStart + base;
     const position = scrolled - start;
-    console.log(start);
-    console.log(position);
-    console.log(scrolled);
 
     return (
         <section id="info" className="myScroll">

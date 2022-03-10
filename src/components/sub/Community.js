@@ -91,7 +91,6 @@ export default function Community() {
     }, []);
 
     useEffect(() => {
-        console.log('변경됨');
         localStorage.setItem('posts', JSON.stringify(posts));
     }, [posts]);
 

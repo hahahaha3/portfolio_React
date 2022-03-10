@@ -130,8 +130,8 @@ export default function Gallery() {
             <div className="inner">
            
                 <div className="gallery_About">
-                    <h1>Lorem, ipsum.</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus deserunt quod quas dolore ab reprehenderit iure corrupti! Itaque atque sed repellendus nisi porro quia laborum maiores ad recusandae deserunt enim nesciunt tempora unde mollitia, velit doloribus molestiae explicabo voluptatum quae. Qui iusto accusamus ipsum esse facere id vero enim? Dolorem voluptates quibusdam architecto vero aspernatur odio quam placeat quod molestias sed aperiam reprehenderit alias quae iure itaque qui non nobis modi quis, autem ipsa fuga ad cum ut. Sit quia eius quis quibusdam voluptates, dolorum adipisci! Magnam, quidem voluptates distinctio sequi at error, ipsam a qui consequuntur quos pariatur architecto!</p>
+                    <h1>We’ve Got You Covered</h1>
+                    <p>To help you get back to making new memories, we're extending your benefits again! Enjoy more time to use the rewards you've already earned, plus earn rewards even faster.To help you get back to making new memories, we're extending your benefits again! Enjoy more time to use the rewards you've already earned, plus earn rewards even faster.To help you get back to making new memories, we're extending your benefits again! Enjoy more time to use the rewards you've already earned, plus earn rewards even faster.</p>
                     <div className="aboutTxt">
                         <img src={`${path}/img/aboutSub.jpeg`} />
                         <h3><span>“</span> Our work does make<br /> &nbsp; sense only if it is a faithful <br /> &nbsp; &nbsp;withness of his time.<br /><span className="omgSpan">”</span></h3>
